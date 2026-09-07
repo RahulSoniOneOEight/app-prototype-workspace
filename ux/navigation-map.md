@@ -4,6 +4,12 @@ Describes how screens connect in the frozen reference. The prototype has **no ro
 navigation is a single `screen` state variable per app (`App.tsx:1677`, `B2BApp.tsx:2160`)
 plus a few boolean overlays. All "links" below are callbacks wired in the root component.
 
+> **Authoritative updates** (`brief/product-ux-updates.md`) override the reference. The
+> deltas below are tagged `(U-n)` with current → new inline. Key nav changes: B2B entry no
+> longer gates on registration (U8), B2B search becomes a real overlay (U3), a floating
+> WhatsApp CTA is added to both apps (U2), and both carts gain per-item related-product
+> drill-downs (U6).
+
 ## 1. Top-level structure (three phases)
 
 ```
@@ -26,6 +32,8 @@ Switching back:
   user/login chip; desktop category tabs + "Today's Deals".
 - `BottomNav` (mobile only) `App.tsx:353` — Home, Browse (`category`), Orders, Cart,
   and a 5th Profile/Login slot.
+- **U2 (new):** floating `WhatsAppCTA` FAB persists over all scroll positions; stacks above
+  the "Switch to B2B Trade" button and, on mobile, above `BottomNav`.
 
 **Screen graph**
 
@@ -52,15 +60,18 @@ search (overlay, any chrome screen) ──▶ product / category
 ## 3. B2B navigation (`B2BApp.tsx`, root at line 2159)
 
 **Primary chrome**
-- `B2BHeader` `B2BApp.tsx:2072` — logo → home; search; credit chip → credit;
-  account chip → dashboard; cart → cart; category nav row + RFQ / WhatsApp links.
+- `B2BHeader` `B2BApp.tsx:2072` — logo → home; search → `B2BSearchOverlay` (U3); credit
+  chip → credit; account chip → dashboard; cart → cart; category nav row + RFQ / WhatsApp links.
 - `B2BBottomNav` (mobile only) `B2BApp.tsx:2135` — Trade (`home`), Quotes (`quotations`),
   Credit (`credit`), Order (`cart`), Account (`dashboard`).
+- **U2 (new):** floating `WhatsAppCTA` FAB persists over all scroll positions; stacks above
+  the "Switch to B2C" button and, on mobile, above `B2BBottomNav`.
 
-**Entry gate**
+**Entry gate — changed (U8)**
 ```
-B2BApp boot → screen="register" (B2BRegister)      B2BApp.tsx:2161, 2186
-  └─ onDone(b2bUser) → setScreen("home")
+Reference:  B2BApp boot → screen="register" (B2BRegister, 2-step) → home   B2BApp.tsx:2161, 2186
+New (U8):   B2BApp boot → minimal login → home (no forced business registration)
+            Business/trade details deferred to the credit journey (U9).
 ```
 
 **Screen graph**
@@ -78,10 +89,14 @@ home ──onCredit──▶ credit
 product ──onRFQ──▶ RFQOverlay (overlay) ──submit──▶ quotations
 product ──onAddCart──▶ cart
 cart ──checkout──▶ checkout ──confirm──▶ confirm ──home──▶ home
+cart ──item related (U6)──▶ related-product drill-down (overlay/inline) ──switch──▶ cart
+search (U3) ──▶ B2BSearchOverlay ──intent──▶ product / RFQOverlay / QuickOrderOverlay
 credit (from header/bottom nav/dashboard/home credit bar)
+  credit "Limit" tab ──(U9)──▶ business verification (PAN/GSTIN/trade type)
 ```
 
-**Overlays** (`B2BApp.tsx:2207`): `RFQOverlay` and `QuickOrderOverlay` render on top of any screen.
+**Overlays** (`B2BApp.tsx:2207`): `RFQOverlay`, `QuickOrderOverlay`, and (new, U3)
+`B2BSearchOverlay` render on top of any screen.
 `hideChrome = ["checkout","confirm"]` (`B2BApp.tsx:2184`).
 
 ## 4. Cross-mode / shared entry points
@@ -98,9 +113,10 @@ credit (from header/bottom nav/dashboard/home credit bar)
 | z | Layer |
 |---|---|
 | 40 | Floating mode-switch buttons |
+| 45 | Floating WhatsApp CTA (U2) — above mode-switch, below overlays |
 | 50 | Header / BottomNav (sticky) |
-| 60 | SearchOverlay |
-| 70 | RFQOverlay / QuickOrderOverlay / toast |
+| 60 | SearchOverlay / B2BSearchOverlay (U3) |
+| 70 | RFQOverlay / QuickOrderOverlay / related-item drill-down / toast |
 | 80 | LoginScreen |
 | 85 | ModePicker |
 | 90 | Added-to-cart toast |
