@@ -1,0 +1,10 @@
+{
+  "description": "Connects direct-to-consumer brands with shoppers, offering a seamless marketplace experience to discover and purchase unique products directly from sellers.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
