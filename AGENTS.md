@@ -15,6 +15,17 @@ This repository is the structured source of truth for application prototype work
 - Treat GitHub/code references as inspiration and implementation evidence; do not blindly copy third-party designs.
 - Before destructive or broad Penpot changes, summarize the intended changes.
 
+## Frozen reference material
+
+The following paths are frozen reference material:
+
+- prototype/figma-make/
+- references/figma-make/screenshots/
+
+Do not modify, rename, delete, move, reformat, regenerate, or overwrite files in these paths unless explicitly instructed.
+
+These paths are read-only reference inputs for the prototype rebuild.
+
 ## Recommended model roles
 
 - OpenAI: product/UX architecture, difficult design decisions, review/audit.
