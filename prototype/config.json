@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "targetPenpotFile": {
+    "name": "piv1",
+    "requireExactNameMatch": true
+  },
+  "authoritativeSources": [
+    "brief/product-ux-updates.md",
+    "ux/prototype-scope.md",
+    "ux/b2b-b2c-journeys.md",
+    "ux/navigation-map.md",
+    "ux/screen-inventory.md",
+    "design/prototype-decisions.md"
+  ],
+  "referenceSources": [
+    "prototype/figma-make/",
+    "references/figma-make/screenshots/"
+  ],
+  "designEngine": "penpot-ai-kit",
+  "executionBridge": "penpot-mcp",
+  "orchestrator": "codex",
+  "defaultFlow": "b2c-purchase",
+  "guardrails": {
+    "inspectBeforeWrite": true,
+    "reuseExistingTokensAndComponents": true,
+    "requireApprovalBeforeBroadChanges": true,
+    "neverWriteIfTargetFileMismatches": true,
+    "noProductionCodeBeforePrototypeV1Approval": true
+  }
+}
