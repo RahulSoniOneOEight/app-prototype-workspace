@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pinaka.local/schemas/prototype-flow.schema.json",
+  "title": "Prototype Flow",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "id", "targetPenpotFile", "start", "nodes", "interactions"],
+  "properties": {
+    "version": { "const": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "targetPenpotFile": { "const": "piv1" },
+    "start": { "type": "string", "minLength": 1 },
+    "nodes": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "type", "penpotName"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "type": { "enum": ["screen", "state", "overlay"] },
+          "penpotName": { "type": "string", "minLength": 1 },
+          "required": { "type": "boolean" },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "interactions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["from", "trigger", "event", "action", "to"],
+        "properties": {
+          "from": { "type": "string", "minLength": 1 },
+          "trigger": { "type": "string", "minLength": 1 },
+          "event": { "enum": ["click", "tap", "submit"] },
+          "action": { "enum": ["navigate", "open-overlay", "close-overlay", "change-state"] },
+          "to": { "type": "string", "minLength": 1 },
+          "transition": { "enum": ["instant", "dissolve", "slide-left", "slide-right"] },
+          "notes": { "type": "string" }
+        }
+      }
+    }
+  }
+}
