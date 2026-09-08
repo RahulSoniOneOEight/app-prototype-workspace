@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "targetPenpotFile": "piv1",
+  "flow": "b2c-purchase",
+  "states": [
+    {
+      "id": "b2c-product-added",
+      "base": "b2c-product",
+      "changes": [
+        "Show added-to-cart confirmation",
+        "Expose View Cart as the primary next action",
+        "Preserve product quantity and delivery context"
+      ]
+    },
+    {
+      "id": "b2c-checkout-address",
+      "base": "b2c-checkout",
+      "changes": [
+        "Address step active",
+        "Continue disabled until a valid address is selected or entered"
+      ]
+    },
+    {
+      "id": "b2c-checkout-payment",
+      "base": "b2c-checkout",
+      "changes": [
+        "Payment step active",
+        "Show payment-method RadioCard choices"
+      ]
+    },
+    {
+      "id": "b2c-checkout-review",
+      "base": "b2c-checkout",
+      "changes": [
+        "Review step active",
+        "Show final order summary, delivery choices and Place Order action"
+      ]
+    }
+  ]
+}
