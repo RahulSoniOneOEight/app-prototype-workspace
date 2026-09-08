@@ -1,0 +1,32 @@
+{
+  "$schema": "../../schemas/prototype-flow.schema.json",
+  "version": 1,
+  "id": "b2c-purchase",
+  "targetPenpotFile": "piv1",
+  "start": "b2c-home",
+  "nodes": [
+    { "id": "b2c-home", "type": "screen", "penpotName": "B2C Home", "required": true },
+    { "id": "b2c-product", "type": "screen", "penpotName": "B2C Product", "required": true },
+    { "id": "b2c-product-added", "type": "state", "penpotName": "B2C Product / Added to cart", "required": true },
+    { "id": "b2c-cart", "type": "screen", "penpotName": "B2C Cart", "required": true },
+    { "id": "b2c-checkout-address", "type": "state", "penpotName": "B2C Checkout / Address", "required": true },
+    { "id": "b2c-checkout-payment", "type": "state", "penpotName": "B2C Checkout / Payment", "required": true },
+    { "id": "b2c-checkout-review", "type": "state", "penpotName": "B2C Checkout / Review", "required": true },
+    { "id": "b2c-confirmation", "type": "screen", "penpotName": "B2C Confirmation", "required": true },
+    { "id": "b2c-tracking", "type": "screen", "penpotName": "B2C Tracking", "required": true },
+    { "id": "b2c-search", "type": "overlay", "penpotName": "B2C Search Overlay", "required": true },
+    { "id": "whatsapp", "type": "overlay", "penpotName": "WhatsApp CTA", "required": true }
+  ],
+  "interactions": [
+    { "from": "b2c-home", "trigger": "product-card-primary", "event": "tap", "action": "navigate", "to": "b2c-product", "transition": "slide-left" },
+    { "from": "b2c-home", "trigger": "search", "event": "tap", "action": "open-overlay", "to": "b2c-search", "transition": "dissolve" },
+    { "from": "b2c-product", "trigger": "add-to-cart", "event": "tap", "action": "change-state", "to": "b2c-product-added", "transition": "dissolve" },
+    { "from": "b2c-product-added", "trigger": "view-cart", "event": "tap", "action": "navigate", "to": "b2c-cart", "transition": "slide-left" },
+    { "from": "b2c-cart", "trigger": "checkout", "event": "tap", "action": "navigate", "to": "b2c-checkout-address", "transition": "slide-left" },
+    { "from": "b2c-checkout-address", "trigger": "continue", "event": "tap", "action": "change-state", "to": "b2c-checkout-payment", "transition": "slide-left" },
+    { "from": "b2c-checkout-payment", "trigger": "continue", "event": "tap", "action": "change-state", "to": "b2c-checkout-review", "transition": "slide-left" },
+    { "from": "b2c-checkout-review", "trigger": "place-order", "event": "tap", "action": "navigate", "to": "b2c-confirmation", "transition": "dissolve" },
+    { "from": "b2c-confirmation", "trigger": "track-order", "event": "tap", "action": "navigate", "to": "b2c-tracking", "transition": "slide-left" },
+    { "from": "b2c-home", "trigger": "whatsapp-cta", "event": "tap", "action": "open-overlay", "to": "whatsapp", "transition": "dissolve", "notes": "Representative global CTA interaction; preserve the floating CTA on all priority screens." }
+  ]
+}
