@@ -1,0 +1,6 @@
+rules:
+  - id: site-installation-approval
+    status: client_only
+    description: Installation date must be confirmed by the buyer after delivery-slot selection.
+    promote_when_reused: true
+    evidence_required_for_promotion: 2_similar_clients
