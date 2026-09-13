@@ -1,0 +1,11 @@
+id: preset.industry.electronics
+kind: industry
+recommended:
+  patterns: [shared.search, shared.plp, shared.pdp]
+  capabilities: [technical_specs, model_variant, warranty, compatibility, stock_visibility]
+  component_variants: {commerce.product_card: standard}
+optional:
+  capabilities: [comparison, repair_service, extended_warranty, b2b_bulk]
+  journeys: [b2b.browse_to_bulk_order]
+avoid:
+  capabilities: [imagery_only_product_decision]
