@@ -1,0 +1,18 @@
+id: core.icon_button
+name: IconButton
+category: core.action
+purpose: Compact icon-only action with required semantic labeling.
+status: approved
+business_models: [b2c, b2b, marketplace, subscription]
+industries: [general]
+use_cases: [navigation, wishlist, close, share, quick_action]
+variants: [standard, filled, tonal, destructive]
+states: [default, hover, pressed, focused, disabled, loading]
+density: [compact, standard]
+responsive: {mobile: supported, tablet: supported, desktop: supported}
+compatible_patterns: ['*']
+requires: []
+avoid_when: [action_meaning_is_not_clear_without_text]
+accessibility: {min_target_px: 44, semantic_label_required: true, visible_focus: true}
+source_refs: [momentous-developments/flutter-showcase-app]
+tags: [icon, button, action, primitive]
