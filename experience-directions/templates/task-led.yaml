@@ -1,0 +1,30 @@
+id: task-led
+name: Task-led utility experience
+strategy: task_led
+structure:
+  entry: task_hub
+  navigation: utility_first
+journeys:
+  primary:
+    - core.order_tracking
+patterns:
+  home: shared.home
+  orders: shared.orders
+  account: shared.account
+density: standard
+merchandising:
+  emphasis:
+    - active_tasks
+    - recent_activity
+interactions:
+  task_shortcuts: primary
+  search_prominence: secondary
+visual_style:
+  hierarchy: utility
+  imagery: minimal
+resources:
+  imagery_style: minimal
+  icon_family: iconoir
+tradeoffs:
+  - Lower merchandising exposure than discovery-led experiences.
+rationale: Best when repeat service, account activity, and task completion matter most.
