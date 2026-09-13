@@ -1,0 +1,11 @@
+id: b2b.procurement_order
+business_models: [b2b]
+industries: [general]
+use_cases: [procurement_order, quote_to_order, approval]
+best_for: [business_purchase, repeat_procurement]
+avoid_for: [consumer_quick_checkout]
+required_components: [commerce.cart_item, commerce.price_display, core.button]
+optional_components: [core.badge]
+responsive: {mobile: stacked, tablet: split_summary, desktop: detail_with_status_rail}
+supported_slots: [source_quote, purchase_order, items, approval, credit_or_payment, fulfillment, documents, timeline, reorder]
+extends: shared.orders
