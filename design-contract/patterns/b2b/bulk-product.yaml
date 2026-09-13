@@ -1,0 +1,11 @@
+id: b2b.bulk_product
+business_models: [b2b]
+industries: [general]
+use_cases: [bulk_purchase, wholesale, procurement]
+best_for: [moq, tier_pricing, pack_uom]
+avoid_for: [single_unit_consumer_only]
+required_components: [commerce.product_card, commerce.price_display, commerce.quantity_stepper]
+optional_components: [core.badge]
+responsive: {mobile: stacked, tablet: split, desktop: spec_and_purchase_panel}
+supported_slots: [sku, stock, moq, pack_uom, tier_pricing, delivery, quantity, add_to_cart, request_quote]
+extends: shared.pdp
