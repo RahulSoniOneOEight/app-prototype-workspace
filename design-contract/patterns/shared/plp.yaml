@@ -1,0 +1,11 @@
+id: shared.plp
+business_models: [b2c, b2b, marketplace]
+industries: [general]
+use_cases: [product_listing, filtering, comparison]
+best_for: [catalogue_browse, large_catalogue]
+avoid_for: [single_product]
+required_components: [commerce.product_card]
+optional_components: [core.chip, commerce.promo_tile]
+responsive: {mobile_columns: 2, tablet_columns: 3, desktop_columns: 4}
+supported_slots: [app_bar, category_context, filter_sort, merchandising_slot, product_collection]
+variants: [standard, discovery_first, filter_heavy]
