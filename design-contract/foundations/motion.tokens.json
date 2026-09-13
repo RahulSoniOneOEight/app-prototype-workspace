@@ -1,0 +1,12 @@
+{
+  "duration": {"fast":200,"normal":300,"slow":500,"page":400},
+  "behaviors": {
+    "press":{"duration":"fast","curve":"easeOut"},
+    "fadeIn":{"duration":"normal","curve":"easeOut"},
+    "fadeUp":{"duration":"normal","curve":"easeOutCubic"},
+    "scaleIn":{"duration":"fast","curve":"easeOut"},
+    "pageEnter":{"duration":"page","curve":"easeInOutCubic"},
+    "listStagger":{"duration":"normal","staggerMs":40,"curve":"easeOut"},
+    "hoverLift":{"duration":"fast","scale":1.02,"curve":"easeInOut"}
+  }
+}
