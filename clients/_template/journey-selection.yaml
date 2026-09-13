@@ -1,0 +1,7 @@
+selected:
+  - core.browse_to_product
+  - core.cart_to_checkout
+  - core.order_tracking
+  - core.return
+notes:
+  - Select registry IDs only. Layer business-model, industry and use-case journeys as needed.
