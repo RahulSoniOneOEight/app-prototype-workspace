@@ -1,0 +1,9 @@
+id: b2b.rfq_to_quotes
+name: RFQ to Quotes
+business_models: [b2b, marketplace]
+industries: [general]
+use_cases: [rfq, sourcing]
+requires: [commerce.quote, commerce.seller]
+patterns: [b2b.rfq, b2b.quote_comparison]
+steps: [open_rfq, view_status, receive_seller_responses, inspect_quote_completeness, open_comparison]
+optional: [remind_seller, extend_deadline, close_rfq]
