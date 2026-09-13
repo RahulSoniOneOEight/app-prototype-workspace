@@ -1,0 +1,11 @@
+id: preset.use_case.bulk_procurement
+kind: use_case
+recommended:
+  patterns: [b2b.boq_builder, b2b.rfq, b2b.quote_comparison, b2b.procurement_order]
+  capabilities: [boq, document_to_catalogue_match, rfq, quote_compare, negotiation, approval, split_award]
+  component_variants: {commerce.product_card: b2b, commerce.price_display: negotiated}
+optional:
+  capabilities: [trade_credit, site_delivery, project_cost_center]
+  journeys: [b2b.document_to_catalogue_match, b2b.boq_to_rfq, b2b.rfq_to_quotes, b2b.quote_comparison_to_award, b2b.quote_to_order]
+avoid:
+  capabilities: [instant_checkout_as_only_path]
