@@ -1,0 +1,18 @@
+id: commerce.price_display
+name: PriceDisplay
+category: commerce.pricing
+purpose: Present retail, promotional, tiered, negotiated or quote-pending price states consistently.
+status: approved
+business_models: [b2c, b2b, marketplace]
+industries: [general]
+use_cases: [catalog, product_detail, cart, quote]
+variants: [standard, discounted, tiered, negotiated, quotePending]
+states: [default, loading, unavailable]
+density: [compact, standard]
+responsive: {mobile: supported, tablet: supported, desktop: supported}
+compatible_patterns: [shared.plp, shared.pdp, shared.cart, b2b.bulk_product, b2b.quote_comparison]
+requires: []
+avoid_when: [price_hidden_by_policy]
+accessibility: {announce_discount_context: true, do_not_rely_on_strikethrough_only: true}
+source_refs: [momentous-developments/flutter-showcase-app, bagisto/bagisto]
+tags: [price, commerce, discount, b2b]
