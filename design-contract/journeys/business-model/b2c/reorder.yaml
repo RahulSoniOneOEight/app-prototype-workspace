@@ -1,0 +1,9 @@
+id: b2c.reorder
+name: Reorder
+business_models: [b2c]
+industries: [general]
+use_cases: [repeat_purchase]
+requires: [commerce.order, commerce.cart]
+patterns: [shared.orders, shared.cart]
+steps: [open_order_history, choose_previous_order, review_availability_and_price_changes, add_available_items_to_cart, checkout]
+optional: [adjust_quantities, substitute_unavailable]
