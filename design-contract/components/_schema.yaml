@@ -19,6 +19,6 @@ required_for_decision_components:
   - tags
 allowed_status: [experimental, approved, deprecated]
 notes:
-  - Deterministic foundation tokens do not use this rich metadata schema.
-  - Use industries: [general] when no specialization exists.
-  - OpenCode should query registry metadata before loading this detailed contract.
+  - "Deterministic foundation tokens do not use this rich metadata schema."
+  - "Use industries: [general] when no specialization exists."
+  - "OpenCode should query registry metadata before loading this detailed contract."
