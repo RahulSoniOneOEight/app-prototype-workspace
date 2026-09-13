@@ -1,0 +1,9 @@
+id: b2b.quote_to_order
+name: Quote to Order
+business_models: [b2b]
+industries: [general]
+use_cases: [quote_acceptance, procurement_order]
+requires: [commerce.quote, commerce.order]
+patterns: [b2b.quote_comparison, b2b.procurement_order]
+steps: [open_accepted_quote, confirm_terms, select_payment_or_credit, satisfy_approval, create_order, confirmation]
+optional: [purchase_order_number, cost_center]
