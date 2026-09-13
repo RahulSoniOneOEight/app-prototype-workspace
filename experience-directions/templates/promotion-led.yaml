@@ -1,0 +1,32 @@
+id: promotion-led
+name: Promotion-led commerce experience
+strategy: promotion_led
+structure:
+  entry: home
+  navigation: consumer_bottom_nav
+journeys:
+  primary:
+    - b2c.discovery_to_purchase
+patterns:
+  home: b2c.discovery_home
+  merchandising: b2c.promo_merchandising
+  plp: shared.plp
+density: standard
+merchandising:
+  emphasis:
+    - campaigns
+    - deals
+    - buy_more_save_more
+    - cross_sell
+interactions:
+  promotion_prominence: primary
+  search_prominence: secondary
+visual_style:
+  hierarchy: campaign_forward
+  imagery: campaign
+resources:
+  imagery_style: campaign
+  icon_family: iconoir
+tradeoffs:
+  - Can feel noisy when the catalogue is premium or low-promotion.
+rationale: Best when offers, campaigns, and merchandising are the primary conversion levers.
