@@ -1,0 +1,18 @@
+id: core.chip
+name: Chip
+category: core.selection
+purpose: Compact filter, choice, assist or status control.
+status: approved
+business_models: [b2c, b2b, marketplace, subscription]
+industries: [general]
+use_cases: [filtering, selection, status, tags]
+variants: [filter, choice, assist, status]
+states: [default, hover, pressed, focused, selected, disabled]
+density: [compact, standard]
+responsive: {mobile: supported, tablet: supported, desktop: supported}
+compatible_patterns: [shared.search, shared.plp, shared.pdp]
+requires: []
+avoid_when: [long_form_multi_select]
+accessibility: {min_target_px: 44, selected_state_announced: true, non_color_selection_indicator: true}
+source_refs: [momentous-developments/flutter-showcase-app]
+tags: [chip, filter, selection, primitive]
