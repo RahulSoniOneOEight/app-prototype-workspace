@@ -1,0 +1,18 @@
+id: commerce.promo_tile
+name: PromoTile
+category: commerce.merchandising
+purpose: Merchandising surface for campaigns, related products and promotional collections.
+status: approved
+business_models: [b2c, b2b, marketplace]
+industries: [general]
+use_cases: [campaign, complementary_products, buy_more_save_more, deals, recently_viewed]
+variants: [banner, split, editorial, compact]
+states: [default, loading, disabled]
+density: [compact, standard, spacious]
+responsive: {mobile: supported, tablet: supported, desktop: supported}
+compatible_patterns: [shared.home, shared.plp, b2c.promo_merchandising]
+requires: [core.card]
+avoid_when: [non_merchandising_system_message]
+accessibility: {text_contrast_required: true, meaningful_image_alt: true}
+source_refs: [robertodevs/flutter_ecommerce_template]
+tags: [promo, merchandising, split_tile]
