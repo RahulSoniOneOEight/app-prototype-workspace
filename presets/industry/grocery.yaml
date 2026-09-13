@@ -1,0 +1,11 @@
+id: preset.industry.grocery
+kind: industry
+recommended:
+  patterns: [b2c.discovery_home, shared.search, shared.plp, shared.cart, b2c.consumer_checkout]
+  capabilities: [fast_search, repeat_purchase, substitutions, delivery_slot, quantity_stepper]
+  component_variants: {commerce.product_card: standard, commerce.quantity_stepper: compact}
+optional:
+  capabilities: [quick_commerce, saved_basket, scheduled_delivery]
+  journeys: [b2c.reorder]
+avoid:
+  capabilities: [specification_heavy_pdp]
