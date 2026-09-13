@@ -1,0 +1,11 @@
+selected:
+  - b2b.trade_home
+  - shared.search
+  - shared.plp
+  - b2b.bulk_product
+  - b2b.boq_builder
+  - b2b.rfq
+  - b2b.quote_comparison
+  - b2b.credit
+  - b2b.business_account
+  - b2b.procurement_order
