@@ -1,0 +1,11 @@
+id: shared.cart
+business_models: [b2c, b2b, marketplace]
+industries: [general]
+use_cases: [cart_review, quantity_change, promotion_review]
+best_for: [pre_checkout_review]
+avoid_for: [quote_without_cart]
+required_components: [commerce.cart_item, commerce.price_display]
+optional_components: [commerce.promo_tile]
+responsive: {mobile: stacked, tablet: split_summary, desktop: two_column}
+supported_slots: [items, promotions, fulfillment, warnings, totals, primary_action]
+variants: [standard, marketplace_grouped, b2b_bulk]
