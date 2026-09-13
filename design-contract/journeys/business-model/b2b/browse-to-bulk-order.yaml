@@ -1,0 +1,9 @@
+id: b2b.browse_to_bulk_order
+name: Browse to Bulk Order
+business_models: [b2b]
+industries: [general]
+use_cases: [bulk_purchase, wholesale]
+requires: [commerce.product, commerce.cart]
+patterns: [b2b.trade_home, shared.plp, b2b.bulk_product, shared.cart]
+steps: [enter_trade_home, search_or_browse, evaluate_bulk_terms, set_quantity, review_moq_and_tier_price, add_to_cart, checkout_or_request_quote]
+optional: [saved_list, repeat_order]
