@@ -1,0 +1,9 @@
+id: use_case.repair_service_request
+name: Repair Service Request
+business_models: [b2c, b2b]
+industries: [electronics, general]
+use_cases: [repair, service]
+requires: [commerce.customer, commerce.order]
+patterns: [shared.account, shared.orders]
+steps: [identify_item, capture_issue, check_warranty_or_history, choose_pickup_or_dropoff, receive_diagnosis, approve_quote_if_required, track_service, collect_or_receive_item]
+optional: [spare_parts, replacement_offer]
