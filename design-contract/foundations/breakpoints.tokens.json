@@ -1,0 +1,10 @@
+{
+  "thresholds": {"mobile":600,"tablet":1000,"desktop":1500},
+  "bands": {
+    "phoneCompact":{"min":0,"max":359},
+    "phone":{"min":360,"max":599},
+    "tablet":{"min":600,"max":999},
+    "desktop":{"min":1000,"max":1499},
+    "wide":{"min":1500,"max":null}
+  }
+}
