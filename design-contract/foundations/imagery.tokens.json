@@ -1,0 +1,8 @@
+{
+  "product":{"aspectRatio":"1:1","fit":"cover","placeholder":"neutral-product"},
+  "hero":{"aspectRatio":"16:9","fit":"cover","placeholder":"neutral-hero"},
+  "category":{"aspectRatio":"1:1","fit":"cover","placeholder":"neutral-category"},
+  "avatar":{"aspectRatio":"1:1","fit":"cover","shape":"circle","placeholder":"initials"},
+  "emptyState":{"aspectRatio":"4:3","fit":"contain","placeholder":"illustration"},
+  "rules":{"preserveSubject":true,"avoidTextInRaster":true,"clientAssetsPreferredInProduction":true}
+}
