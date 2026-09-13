@@ -1,0 +1,16 @@
+client: Example B2B Furniture
+business_model: b2b
+industry: furniture
+target_users: [procurement_manager, business_owner, site_manager]
+brand_personality: [premium, dependable, professional]
+platforms: [mobile, responsive_web]
+active_presets:
+  business_model: preset.business.b2b
+  industry: preset.industry.furniture
+  use_cases: [preset.use_case.bulk_procurement]
+accessibility:
+  target: WCAG_AA
+  text_scaling: support
+density: standard
+imagery: editorial
+navigation: adaptive_bottom_or_rail
