@@ -1,0 +1,11 @@
+references:
+  - id: agency-roberto-commerce
+    type: approved_general_reference
+    source: robertodevs/flutter_ecommerce_template
+    scope: general
+    useful_for: [commerce_navigation, mobile_screen_patterns]
+  - id: agency-bagisto
+    type: approved_general_reference
+    source: bagisto/bagisto
+    scope: general
+    useful_for: [b2b_commerce_concepts, quote_flow, company_account]
