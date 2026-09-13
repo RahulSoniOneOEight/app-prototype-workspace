@@ -1,0 +1,9 @@
+id: industry.construction_project_procurement
+name: Construction Project Procurement
+business_models: [b2b, marketplace]
+industries: [construction]
+use_cases: [project_buying, boq, site_delivery, approval]
+requires: [commerce.product, commerce.quote, commerce.company_account, commerce.order]
+patterns: [b2b.trade_home, b2b.boq_builder, b2b.rfq, b2b.quote_comparison, b2b.procurement_order]
+steps: [select_project_or_site, upload_or_build_boq, match_catalogue, request_quotes, compare_quotes, approve_award, create_order, schedule_site_delivery, track_fulfillment]
+optional: [split_award, credit, cost_center]
