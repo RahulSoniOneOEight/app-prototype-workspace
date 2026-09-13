@@ -1,0 +1,12 @@
+id: preset.business.b2c
+kind: business_model
+recommended:
+  themes: [theme.base]
+  patterns: [b2c.discovery_home, shared.search, shared.plp, shared.pdp, shared.cart, b2c.consumer_checkout, shared.orders, shared.account]
+  journeys: [core.browse_to_product, b2c.discovery_to_purchase, b2c.consumer_checkout, core.order_tracking, core.return, b2c.reorder]
+  component_variants: {commerce.product_card: standard, commerce.price_display: standard}
+optional:
+  patterns: [b2c.promo_merchandising, b2c.related_products]
+  capabilities: [wishlist, reviews, promotions]
+avoid:
+  patterns: [b2b.rfq, b2b.credit, b2b.quote_comparison]
