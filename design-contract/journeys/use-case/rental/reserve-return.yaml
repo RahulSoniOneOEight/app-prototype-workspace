@@ -1,0 +1,9 @@
+id: use_case.rental_reserve_return
+name: Rental Reserve and Return
+business_models: [b2c, b2b]
+industries: [general]
+use_cases: [rental]
+requires: [commerce.product, commerce.checkout, commerce.order]
+patterns: [shared.search, shared.plp, shared.pdp, shared.checkout, shared.orders]
+steps: [choose_item, choose_date_range, check_availability, review_deposit_and_terms, choose_pickup_or_delivery, pay_or_confirm_terms, collect_or_receive, return, close_or_charge_damage]
+optional: [extend_rental, recurring_rental]
