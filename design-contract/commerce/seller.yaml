@@ -1,0 +1,6 @@
+id: commerce.seller
+purpose: Marketplace seller identity and decision-support vocabulary.
+fields: [id, name, logo, rating, review_count, location, fulfillment, delivery_promise, return_policy, trust_badges]
+optional_b2b: [company_name, tax_identity, quote_capability, minimum_order]
+rules:
+  - Seller information is shown where seller choice materially affects price, delivery or trust.
