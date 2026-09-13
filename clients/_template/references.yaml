@@ -1,0 +1,11 @@
+references: []
+# Example entry:
+# - id: client-brand-guide
+#   type: brand_guide
+#   source: path-or-url
+#   scope: client_only
+#   approved: true
+#   useful_for: [color, typography, imagery]
+rules:
+  - Client references remain client_only unless explicitly reviewed and promoted.
+  - External UI must be normalized before implementation.
