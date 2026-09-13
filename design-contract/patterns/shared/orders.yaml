@@ -1,0 +1,11 @@
+id: shared.orders
+business_models: [b2c, b2b, marketplace]
+industries: [general]
+use_cases: [order_history, tracking, reorder, return]
+best_for: [post_purchase_management]
+avoid_for: [pre_purchase_only]
+required_components: [core.card]
+optional_components: [commerce.product_card, commerce.price_display]
+responsive: {mobile: stacked_cards, tablet: adaptive_list, desktop: table_or_cards}
+supported_slots: [filters, order_summary, status, fulfillment, actions, tracking]
+variants: [standard, marketplace_grouped, procurement]
