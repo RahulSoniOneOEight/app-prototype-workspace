@@ -1,0 +1,9 @@
+id: b2c.discovery_to_purchase
+name: Discovery to Purchase
+business_models: [b2c]
+industries: [general]
+use_cases: [consumer_purchase]
+requires: [commerce.product, commerce.cart, commerce.checkout]
+patterns: [b2c.discovery_home, shared.plp, shared.pdp, shared.cart, b2c.consumer_checkout]
+steps: [discover, browse_or_search, evaluate_product, add_to_cart, review_cart, checkout, confirmation]
+optional: [wishlist, related_products, promotions]
