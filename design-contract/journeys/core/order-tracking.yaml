@@ -1,0 +1,9 @@
+id: core.order_tracking
+name: Order Tracking
+business_models: [b2c, b2b, marketplace]
+industries: [general]
+use_cases: [post_purchase, tracking]
+requires: [commerce.order]
+patterns: [shared.orders]
+steps: [open_orders, select_order, view_status, view_fulfillment, view_tracking, take_available_action]
+optional: [contact_support, download_invoice, reorder]
