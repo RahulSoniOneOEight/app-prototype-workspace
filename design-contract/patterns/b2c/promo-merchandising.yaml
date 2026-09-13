@@ -1,0 +1,13 @@
+id: b2c.promo_merchandising
+business_models: [b2c]
+industries: [general]
+use_cases: [campaigns, cross_sell, basket_building]
+best_for: [high_merchandising_apps]
+avoid_for: [minimal_catalogue]
+required_components: [commerce.promo_tile]
+optional_components: [commerce.product_card]
+responsive: {mobile: inline_slots, tablet: mixed_grid, desktop: mixed_grid}
+supported_slots: [banner, split_tile, complementary, buy_more_save_more, recently_viewed, deals]
+rules:
+  - Split tile may follow a run of standard product cards.
+  - Merchandising content must not displace critical filters or checkout controls.
