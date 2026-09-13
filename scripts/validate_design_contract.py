@@ -1,17 +1,39 @@
 #!/usr/bin/env python3
-"""Validate the agency design contract without requiring third-party packages."""
+"""Validate the agency design contract, experience directions, resources, and client composition."""
 from __future__ import annotations
 
 import json
 import re
 import sys
 from pathlib import Path
+from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRIES = {
     "components": ROOT / "design-contract/registry/components.index.yaml",
     "patterns": ROOT / "design-contract/registry/patterns.index.yaml",
     "journeys": ROOT / "design-contract/registry/journeys.index.yaml",
+}
+
+DIRECTION_REQUIRED = {
+    "id",
+    "name",
+    "strategy",
+    "structure",
+    "journeys",
+    "patterns",
+    "density",
+    "merchandising",
+    "interactions",
+    "visual_style",
+}
+RESOURCE_SOURCE_REQUIRED = {
+    "id",
+    "resource_types",
+    "search",
+    "evaluation",
+    "usage",
+    "provenance",
 }
 
 
@@ -26,6 +48,21 @@ def load_json(path: Path, errors: list[str]):
         fail(errors, f"Missing file: {path.relative_to(ROOT)}")
     except json.JSONDecodeError as exc:
         fail(errors, f"Invalid JSON in {path.relative_to(ROOT)}: {exc}")
+    return None
+
+
+def load_yaml(path: Path, errors: list[str]) -> Any:
+    try:
+        import yaml  # type: ignore
+    except ImportError:
+        fail(errors, "PyYAML is required to validate YAML direction/resource documents")
+        return None
+    try:
+        return yaml.safe_load(path.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        fail(errors, f"Missing file: {path.relative_to(ROOT)}")
+    except Exception as exc:
+        fail(errors, f"Invalid YAML in {path.relative_to(ROOT)}: {exc}")
     return None
 
 
@@ -81,10 +118,57 @@ def selected_ids(path: Path) -> list[str]:
     return values
 
 
+def validate_direction_document(document: Any, label: str, errors: list[str]) -> None:
+    if not isinstance(document, dict):
+        fail(errors, f"Direction must be a mapping: {label}")
+        return
+    missing = sorted(DIRECTION_REQUIRED - set(document))
+    for key in missing:
+        fail(errors, f"Direction {label} missing required field: {key}")
+    journeys = document.get("journeys")
+    if journeys is not None:
+        primary = journeys.get("primary") if isinstance(journeys, dict) else None
+        if not isinstance(primary, list) or not primary:
+            fail(errors, f"Direction {label} journeys.primary must contain at least one journey id")
+    structure = document.get("structure")
+    if structure is not None and (not isinstance(structure, dict) or not structure.get("entry")):
+        fail(errors, f"Direction {label} structure.entry is required")
+
+
+def validate_resource_source_document(document: Any, label: str, errors: list[str]) -> None:
+    if not isinstance(document, dict):
+        fail(errors, f"Resource source must be a mapping: {label}")
+        return
+    missing = sorted(RESOURCE_SOURCE_REQUIRED - set(document))
+    for key in missing:
+        fail(errors, f"Resource source {label} missing required field: {key}")
+    checks = document.get("evaluation", {}).get("check", []) if isinstance(document.get("evaluation"), dict) else []
+    if "license" not in checks:
+        fail(errors, f"Resource source {label} evaluation.check must include license")
+    provenance = document.get("provenance", {}).get("store", []) if isinstance(document.get("provenance"), dict) else []
+    for required in ["provider", "asset_id", "source_url", "license", "query"]:
+        if required not in provenance:
+            fail(errors, f"Resource source {label} provenance.store must include {required}")
+
+
+def validate_approved_experience(document: Any, label: str, direction_ids: set[str], errors: list[str]) -> None:
+    if not isinstance(document, dict):
+        fail(errors, f"Approved experience must be a mapping: {label}")
+        return
+    base = document.get("base_direction")
+    if base and base not in direction_ids:
+        fail(errors, f"Approved experience {label} references unknown base direction: {base}")
+    composition = document.get("composition", {})
+    if isinstance(composition, dict):
+        for area, choice in composition.items():
+            source = choice.get("from") if isinstance(choice, dict) else None
+            if source and source not in direction_ids:
+                fail(errors, f"Approved experience {label} area {area} references unknown direction: {source}")
+
+
 def main() -> int:
     errors: list[str] = []
 
-    # Foundation/theme JSON syntax.
     for path in sorted((ROOT / "design-contract/foundations").glob("*.json")):
         load_json(path, errors)
     for path in sorted((ROOT / "design-contract/themes").glob("*.json")):
@@ -92,7 +176,6 @@ def main() -> int:
 
     ids = {kind: validate_registry(kind, path, errors) for kind, path in REGISTRIES.items()}
 
-    # Detailed contract ID sanity and duplicate checks per contract family.
     for folder in [ROOT / "design-contract/components", ROOT / "design-contract/patterns", ROOT / "design-contract/journeys"]:
         seen: set[str] = set()
         for path in folder.rglob("*.yaml"):
@@ -106,7 +189,30 @@ def main() -> int:
                 fail(errors, f"Duplicate detailed id under {folder.name}: {item_id}")
             seen.add(item_id)
 
-    # Client selections must resolve to registry IDs.
+    # Direction templates establish the allowed strategy vocabulary and required structure.
+    template_root = ROOT / "experience-directions/templates"
+    template_ids: set[str] = set()
+    if template_root.exists():
+        for path in sorted(template_root.glob("*.yaml")):
+            document = load_yaml(path, errors)
+            validate_direction_document(document, str(path.relative_to(ROOT)), errors)
+            if isinstance(document, dict) and document.get("id"):
+                if document["id"] in template_ids:
+                    fail(errors, f"Duplicate experience direction template id: {document['id']}")
+                template_ids.add(document["id"])
+
+    # Resource source adapters define active search/evaluation/provenance policy.
+    source_root = ROOT / "agency-resources/sources"
+    source_ids: set[str] = set()
+    if source_root.exists():
+        for path in sorted(source_root.glob("*.yaml")):
+            document = load_yaml(path, errors)
+            validate_resource_source_document(document, str(path.relative_to(ROOT)), errors)
+            if isinstance(document, dict) and document.get("id"):
+                if document["id"] in source_ids:
+                    fail(errors, f"Duplicate resource source id: {document['id']}")
+                source_ids.add(document["id"])
+
     client_root = ROOT / "clients"
     if client_root.exists():
         for client in sorted(p for p in client_root.iterdir() if p.is_dir()):
@@ -120,6 +226,32 @@ def main() -> int:
                 for item_id in selected_ids(journey_file):
                     if item_id not in ids["journeys"]:
                         fail(errors, f"Unknown journey id in {client.name}: {item_id}")
+
+            direction_ids: set[str] = set()
+            direction_root = client / "directions"
+            if direction_root.exists():
+                for path in sorted(direction_root.glob("*.yaml")):
+                    document = load_yaml(path, errors)
+                    validate_direction_document(document, str(path.relative_to(ROOT)), errors)
+                    if isinstance(document, dict) and document.get("id"):
+                        direction_id = document["id"]
+                        if direction_id in direction_ids:
+                            fail(errors, f"Duplicate direction id in {client.name}: {direction_id}")
+                        direction_ids.add(direction_id)
+                        for journey_id in document.get("journeys", {}).get("primary", []):
+                            if journey_id not in ids["journeys"]:
+                                fail(errors, f"Unknown journey id in direction {direction_id}: {journey_id}")
+                        for pattern_id in document.get("patterns", {}).values():
+                            if isinstance(pattern_id, str) and pattern_id not in ids["patterns"]:
+                                fail(errors, f"Unknown pattern id in direction {direction_id}: {pattern_id}")
+            approved = client / "approved-experience.yaml"
+            if approved.exists():
+                validate_approved_experience(
+                    load_yaml(approved, errors),
+                    str(approved.relative_to(ROOT)),
+                    direction_ids,
+                    errors,
+                )
 
     if errors:
         print("Design contract validation failed:")
