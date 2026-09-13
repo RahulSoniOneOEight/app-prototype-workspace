@@ -1,0 +1,9 @@
+id: b2b.boq_to_rfq
+name: BOQ to RFQ
+business_models: [b2b]
+industries: [construction, furniture, general]
+use_cases: [boq, rfq, bulk_procurement]
+requires: [commerce.product, commerce.quote]
+patterns: [b2b.boq_builder, b2b.rfq]
+steps: [create_or_upload_boq, review_lines, match_catalogue, resolve_unmatched, set_quantities_and_site, choose_seller_scope, submit_rfq]
+optional: [save_boq, approval_before_submit]
