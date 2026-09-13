@@ -1,0 +1,10 @@
+{
+  "id":"theme.client",
+  "extends":"theme.base",
+  "colors":{},
+  "typography":{},
+  "radius":{},
+  "density":null,
+  "imagery":{},
+  "motion":{}
+}
