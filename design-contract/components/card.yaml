@@ -1,0 +1,18 @@
+id: core.card
+name: Card
+category: core.container
+purpose: Group related content and actions into a reusable surface.
+status: approved
+business_models: [b2c, b2b, marketplace, subscription]
+industries: [general]
+use_cases: [content_grouping, summary, interactive_surface]
+variants: [flat, elevated, outlined, interactive]
+states: [default, hover, pressed, focused, disabled, loading]
+density: [compact, standard, spacious]
+responsive: {mobile: supported, tablet: supported, desktop: supported}
+compatible_patterns: ['*']
+requires: []
+avoid_when: [full_bleed_content_without_grouping]
+accessibility: {interactive_cards_have_single_clear_action: true, visible_focus: true}
+source_refs: [momentous-developments/flutter-showcase-app]
+tags: [card, container, primitive]
