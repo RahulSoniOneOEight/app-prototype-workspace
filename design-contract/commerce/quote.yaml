@@ -1,0 +1,9 @@
+id: commerce.quote
+purpose: B2B RFQ, seller response, negotiation and quote-to-order vocabulary.
+fields: [id, rfq, seller, items, prices, taxes, delivery, payment_terms, validity, notes, status, revisions]
+statuses: [draft, sent, responded, negotiating, accepted, rejected, expired, converted_to_order]
+negotiation: [buyer_message, seller_message, counter_price, counter_terms, revision_number]
+award: [full_award, split_award]
+rules:
+  - Quote comparison must preserve seller, item, price, delivery and terms context.
+  - Conversion to order must preserve accepted commercial terms.
