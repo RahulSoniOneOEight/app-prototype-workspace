@@ -1,0 +1,26 @@
+{
+  "patterns": [
+    {"id":"shared.home","business_models":["b2c","b2b","marketplace"],"industries":["general"],"use_cases":["discovery","merchandising"],"best_for":["commerce_entry"],"path":"design-contract/patterns/shared/home.yaml"},
+    {"id":"shared.search","business_models":["b2c","b2b","marketplace"],"industries":["general"],"use_cases":["search","discovery"],"best_for":["large_catalogue"],"path":"design-contract/patterns/shared/search.yaml"},
+    {"id":"shared.category","business_models":["b2c","b2b","marketplace"],"industries":["general"],"use_cases":["category_browse"],"best_for":["hierarchical_catalogue"],"path":"design-contract/patterns/shared/category.yaml"},
+    {"id":"shared.plp","business_models":["b2c","b2b","marketplace"],"industries":["general"],"use_cases":["product_listing","filtering"],"best_for":["catalogue_browse"],"path":"design-contract/patterns/shared/plp.yaml"},
+    {"id":"shared.pdp","business_models":["b2c","b2b","marketplace"],"industries":["general"],"use_cases":["product_detail"],"best_for":["product_evaluation"],"path":"design-contract/patterns/shared/pdp.yaml"},
+    {"id":"shared.cart","business_models":["b2c","b2b","marketplace"],"industries":["general"],"use_cases":["cart_review"],"best_for":["pre_checkout_review"],"path":"design-contract/patterns/shared/cart.yaml"},
+    {"id":"shared.checkout","business_models":["b2c","b2b","marketplace"],"industries":["general"],"use_cases":["checkout"],"best_for":["order_finalization"],"path":"design-contract/patterns/shared/checkout.yaml"},
+    {"id":"shared.orders","business_models":["b2c","b2b","marketplace"],"industries":["general"],"use_cases":["order_history","tracking"],"best_for":["post_purchase_management"],"path":"design-contract/patterns/shared/orders.yaml"},
+    {"id":"shared.account","business_models":["b2c","b2b","marketplace"],"industries":["general"],"use_cases":["account_management"],"best_for":["authenticated_self_service"],"path":"design-contract/patterns/shared/account.yaml"},
+    {"id":"b2c.discovery_home","business_models":["b2c"],"industries":["general"],"use_cases":["discovery","personalized_merchandising"],"best_for":["consumer_commerce"],"path":"design-contract/patterns/b2c/discovery-home.yaml"},
+    {"id":"b2c.promo_merchandising","business_models":["b2c"],"industries":["general"],"use_cases":["campaigns","cross_sell"],"best_for":["high_merchandising_apps"],"path":"design-contract/patterns/b2c/promo-merchandising.yaml"},
+    {"id":"b2c.related_products","business_models":["b2c","marketplace"],"industries":["general"],"use_cases":["cross_sell","upsell"],"best_for":["pdp","cart"],"path":"design-contract/patterns/b2c/related-products.yaml"},
+    {"id":"b2c.consumer_checkout","business_models":["b2c"],"industries":["general"],"use_cases":["consumer_checkout"],"best_for":["fast_purchase"],"path":"design-contract/patterns/b2c/consumer-checkout.yaml"},
+    {"id":"b2b.trade_home","business_models":["b2b"],"industries":["general"],"use_cases":["procurement","repeat_purchase"],"best_for":["trade_buyers"],"path":"design-contract/patterns/b2b/trade-home.yaml"},
+    {"id":"b2b.bulk_product","business_models":["b2b"],"industries":["general"],"use_cases":["bulk_purchase","wholesale"],"best_for":["moq","tier_pricing"],"path":"design-contract/patterns/b2b/bulk-product.yaml"},
+    {"id":"b2b.boq_builder","business_models":["b2b"],"industries":["construction","furniture","general"],"use_cases":["boq","bulk_procurement"],"best_for":["multi_line_procurement"],"path":"design-contract/patterns/b2b/boq-builder.yaml"},
+    {"id":"b2b.rfq","business_models":["b2b","marketplace"],"industries":["general"],"use_cases":["request_for_quote"],"best_for":["negotiated_purchase"],"path":"design-contract/patterns/b2b/rfq.yaml"},
+    {"id":"b2b.quote_comparison","business_models":["b2b","marketplace"],"industries":["general"],"use_cases":["quote_comparison","award"],"best_for":["multiple_seller_quotes"],"path":"design-contract/patterns/b2b/quote-comparison.yaml"},
+    {"id":"b2b.negotiation","business_models":["b2b","marketplace"],"industries":["general"],"use_cases":["quote_negotiation"],"best_for":["counter_offer"],"path":"design-contract/patterns/b2b/negotiation.yaml"},
+    {"id":"b2b.credit","business_models":["b2b"],"industries":["general"],"use_cases":["trade_credit"],"best_for":["account_purchase"],"path":"design-contract/patterns/b2b/credit.yaml"},
+    {"id":"b2b.business_account","business_models":["b2b"],"industries":["general"],"use_cases":["company_account","approvals"],"best_for":["multi_user_buying_organization"],"path":"design-contract/patterns/b2b/business-account.yaml"},
+    {"id":"b2b.procurement_order","business_models":["b2b"],"industries":["general"],"use_cases":["procurement_order","quote_to_order"],"best_for":["business_purchase"],"path":"design-contract/patterns/b2b/procurement-order.yaml"}
+  ]
+}
