@@ -1,0 +1,11 @@
+id: preset.use_case.rental
+kind: use_case
+recommended:
+  patterns: [shared.search, shared.plp, shared.pdp, shared.checkout, shared.orders]
+  capabilities: [date_range, availability_by_date, deposit, pickup_or_delivery, return_due]
+  component_variants: {commerce.product_card: standard}
+optional:
+  capabilities: [extension_request, damage_check, recurring_rental]
+  journeys: [core.order_tracking]
+avoid:
+  capabilities: [ownership_language_as_default]
