@@ -1,0 +1,11 @@
+id: b2b.trade_home
+business_models: [b2b]
+industries: [general]
+use_cases: [procurement, repeat_purchase, account_actions]
+best_for: [trade_buyers, procurement_teams]
+avoid_for: [consumer_only_app]
+required_components: [core.navigation, commerce.product_card]
+optional_components: [commerce.category_tile, core.card]
+responsive: {mobile: action_first, tablet: dashboard, desktop: dashboard}
+supported_slots: [company_context, search, quick_reorder, saved_lists, quotes, credit_summary, categories, recommendations]
+extends: shared.home
