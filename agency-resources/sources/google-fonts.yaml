@@ -1,0 +1,17 @@
+id: google-fonts
+resource_types: [fonts]
+search:
+  method: catalog
+  supports: [query, family, language, weight]
+evaluation:
+  check: [license, language_coverage, weight_coverage, flutter_support, brand_fit, readability]
+usage:
+  prototype:
+    preferred: package_or_remote_reference
+  production:
+    preferred: bundled_if_license_permits
+provenance:
+  store: [provider, asset_id, source_url, license, query, family, selected_at, usage]
+notes:
+  - Client-licensed brand fonts take precedence.
+  - Font choice belongs in the theme contract, not component code.
