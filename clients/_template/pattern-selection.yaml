@@ -1,0 +1,11 @@
+selected:
+  - shared.home
+  - shared.search
+  - shared.plp
+  - shared.pdp
+  - shared.cart
+  - shared.checkout
+  - shared.orders
+  - shared.account
+notes:
+  - Select registry IDs only. Do not duplicate pattern definitions here.
