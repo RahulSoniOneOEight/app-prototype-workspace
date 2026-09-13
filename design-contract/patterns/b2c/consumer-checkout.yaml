@@ -1,0 +1,11 @@
+id: b2c.consumer_checkout
+business_models: [b2c]
+industries: [general]
+use_cases: [consumer_checkout, guest_checkout]
+best_for: [fast_purchase]
+avoid_for: [approval_required_purchase]
+required_components: [core.button, core.input, commerce.cart_item]
+optional_components: [commerce.promo_tile]
+responsive: {mobile: progressive_steps, tablet: two_column, desktop: two_column}
+supported_slots: [contact, address, delivery, payment, order_summary, confirmation]
+extends: shared.checkout
