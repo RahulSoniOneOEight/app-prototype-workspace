@@ -1,0 +1,11 @@
+id: shared.checkout
+business_models: [b2c, b2b, marketplace]
+industries: [general]
+use_cases: [checkout, payment, order_review]
+best_for: [order_finalization]
+avoid_for: [rfq_only_flow]
+required_components: [core.button, core.input, commerce.price_display]
+optional_components: [commerce.cart_item]
+responsive: {mobile: stepped_or_stacked, tablet: two_column, desktop: two_column_sticky_summary}
+supported_slots: [identity, address, fulfillment, payment, review, summary, confirmation]
+variants: [standard, guest, account, b2b_credit, marketplace_grouped]
