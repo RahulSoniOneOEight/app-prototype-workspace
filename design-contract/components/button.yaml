@@ -1,0 +1,18 @@
+id: core.button
+name: Button
+category: core.action
+purpose: Primary reusable text action control.
+status: approved
+business_models: [b2c, b2b, marketplace, subscription]
+industries: [general]
+use_cases: [actions, forms, checkout, approval]
+variants: [primary, secondary, outline, text, destructive]
+states: [default, hover, pressed, focused, disabled, loading]
+density: [compact, standard, spacious]
+responsive: {mobile: supported, tablet: supported, desktop: supported}
+compatible_patterns: ['*']
+requires: []
+avoid_when: [icon_only_action]
+accessibility: {min_target_px: 44, visible_focus: true, loading_label: true}
+source_refs: [momentous-developments/flutter-showcase-app]
+tags: [button, action, primitive]
