@@ -1,0 +1,18 @@
+id: core.badge
+name: Badge
+category: core.status
+purpose: Short semantic status or merchandising label.
+status: approved
+business_models: [b2c, b2b, marketplace]
+industries: [general]
+use_cases: [new, discount, stock, status]
+variants: [neutral, new, discount, success, warning, error, info]
+states: [default, disabled]
+density: [compact, standard]
+responsive: {mobile: supported, tablet: supported, desktop: supported}
+compatible_patterns: [shared.home, shared.plp, shared.pdp, shared.orders]
+requires: []
+avoid_when: [long_explanation]
+accessibility: {text_required: true, non_color_meaning: true}
+source_refs: [robertodevs/flutter_ecommerce_template, momentous-developments/flutter-showcase-app]
+tags: [badge, status, merchandising]
