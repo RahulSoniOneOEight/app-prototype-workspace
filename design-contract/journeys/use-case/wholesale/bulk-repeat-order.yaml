@@ -1,0 +1,9 @@
+id: use_case.wholesale_bulk_repeat_order
+name: Wholesale Bulk and Repeat Order
+business_models: [b2b]
+industries: [general]
+use_cases: [wholesale, repeat_purchase]
+requires: [commerce.product, commerce.cart, commerce.order]
+patterns: [b2b.trade_home, shared.plp, b2b.bulk_product, shared.cart, shared.orders]
+steps: [search_by_sku_or_list, review_moq_and_tiers, set_case_or_uom_quantity, review_stock, add_to_cart, checkout_or_credit, save_or_reorder]
+optional: [account_specific_price, request_quote]
