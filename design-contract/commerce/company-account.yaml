@@ -1,0 +1,9 @@
+id: commerce.company_account
+purpose: B2B buying organization, user-role, credit and approval vocabulary.
+fields: [company_name, business_id, tax_identity, users, roles, addresses, credit, payment_terms, approval_policy]
+roles: [admin, buyer, approver, finance, viewer]
+credit: [limit, available, used, overdue, terms, statement]
+approval: [required, threshold, approver, status]
+rules:
+  - Role labels are semantic and may map to client-specific permissions later.
+  - Credit UI must distinguish limit, available, used and overdue amounts.
