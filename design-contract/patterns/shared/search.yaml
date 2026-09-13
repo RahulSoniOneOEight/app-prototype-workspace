@@ -1,0 +1,11 @@
+id: shared.search
+business_models: [b2c, b2b, marketplace]
+industries: [general]
+use_cases: [search, discovery, direct_lookup]
+best_for: [large_catalogue, known_item_search]
+avoid_for: [single_item_experience]
+required_components: [core.input]
+optional_components: [core.chip, commerce.product_card, commerce.category_tile]
+responsive: {mobile: full_screen, tablet: full_screen, desktop: overlay_or_page}
+supported_slots: [query, suggestions, recent, categories, results, filters]
+variants: [standard, predictive, b2b_sku_first]
