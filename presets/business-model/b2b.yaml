@@ -1,0 +1,12 @@
+id: preset.business.b2b
+kind: business_model
+recommended:
+  themes: [theme.base]
+  patterns: [b2b.trade_home, shared.search, shared.plp, b2b.bulk_product, b2b.boq_builder, b2b.rfq, b2b.quote_comparison, b2b.credit, b2b.business_account, b2b.procurement_order]
+  journeys: [b2b.browse_to_bulk_order, b2b.boq_to_rfq, b2b.rfq_to_quotes, b2b.quote_comparison_to_award, b2b.quote_to_order, b2b.credit_purchase, b2b.repeat_procurement]
+  component_variants: {commerce.product_card: b2b, commerce.price_display: tiered, commerce.quantity_stepper: b2b}
+optional:
+  patterns: [b2b.negotiation]
+  capabilities: [document_to_catalogue_match, split_award, approvals, trade_credit]
+avoid:
+  patterns: [b2c.consumer_checkout]
