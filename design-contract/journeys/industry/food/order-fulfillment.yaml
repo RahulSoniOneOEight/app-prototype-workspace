@@ -1,0 +1,9 @@
+id: industry.food_order_fulfillment
+name: Food Order Fulfillment
+business_models: [b2c]
+industries: [food]
+use_cases: [delivery, pickup, scheduled_order]
+requires: [commerce.product, commerce.cart, commerce.checkout, commerce.order]
+patterns: [shared.category, shared.pdp, shared.cart, b2c.consumer_checkout]
+steps: [choose_branch_or_location, browse_menu, configure_modifiers, add_to_cart, choose_delivery_or_pickup, choose_time, pay, track_order]
+optional: [dietary_filters, reorder, loyalty]
