@@ -1,0 +1,11 @@
+id: preset.use_case.made_to_order
+kind: use_case
+recommended:
+  patterns: [shared.pdp, shared.checkout]
+  capabilities: [configuration, lead_time, deposit_or_terms, approval_of_spec]
+  component_variants: {commerce.product_card: premium}
+optional:
+  capabilities: [quote, design_consultation, installation]
+  journeys: [b2b.quote_to_order]
+avoid:
+  capabilities: [instant_delivery_promise]
