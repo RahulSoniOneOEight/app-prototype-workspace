@@ -1,0 +1,11 @@
+id: shared.category
+business_models: [b2c, b2b, marketplace]
+industries: [general]
+use_cases: [category_browse, discovery]
+best_for: [hierarchical_catalogue]
+avoid_for: [flat_tiny_catalogue]
+required_components: [commerce.category_tile]
+optional_components: [commerce.promo_tile, commerce.product_card]
+responsive: {mobile: stacked, tablet: grid, desktop: grid_with_navigation}
+supported_slots: [breadcrumbs, title, subcategories, merchandising, featured_products]
+variants: [standard, editorial, department]
