@@ -1,0 +1,10 @@
+id: b2b.rfq
+business_models: [b2b, marketplace]
+industries: [general]
+use_cases: [request_for_quote, bulk_procurement]
+best_for: [negotiated_purchase, multi_seller_sourcing]
+avoid_for: [fixed_price_consumer_checkout]
+required_components: [core.button, core.input]
+optional_components: [commerce.product_card, commerce.price_display]
+responsive: {mobile: stepped_form, tablet: split_form_summary, desktop: two_column}
+supported_slots: [items, quantities, delivery_requirement, payment_terms, notes, attachments, seller_scope, submit]
