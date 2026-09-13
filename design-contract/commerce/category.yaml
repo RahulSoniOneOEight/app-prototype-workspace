@@ -1,0 +1,6 @@
+id: commerce.category
+purpose: Hierarchical catalogue grouping used for discovery, navigation and filtering.
+fields: [id, name, description, image, parent, children, path, merchandising_slots, facet_context]
+rules:
+  - Category structure is platform-neutral.
+  - A category may be rendered as navigation, landing page or filter context.
