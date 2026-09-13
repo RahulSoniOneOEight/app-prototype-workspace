@@ -1,0 +1,12 @@
+id: commerce.product
+purpose: UI-facing product concept shared across B2C, B2B and marketplace flows.
+fields:
+  identity: [id, name, brand, sku]
+  merchandising: [images, badges, rating, review_count]
+  pricing: [price, original_price, discount, tier_pricing, negotiated_price]
+  availability: [stock_state, available_quantity, lead_time]
+  b2b: [moq, pack_size, uom, request_quote]
+  marketplace: [seller]
+rules:
+  - Product UI may hide fields, but should not invent alternate names for the same concept.
+  - This file does not define persistence or API payloads.
