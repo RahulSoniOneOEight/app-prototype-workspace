@@ -1,0 +1,11 @@
+{
+  "id":"theme.marketplace",
+  "extends":"theme.base",
+  "density":"compact",
+  "typography":{"familySlot":"base","informationHierarchy":"strong"},
+  "radius":{"card":"radius.md","button":"radius.md"},
+  "elevation":{"card":"elevation.subtle"},
+  "motion":{"personality":"fast","default":"motion.fast"},
+  "imagery":{"style":"catalogue","crop":"product-first"},
+  "defaults":{"productCardVariant":"marketplace","plpVariant":"filter_heavy"}
+}
