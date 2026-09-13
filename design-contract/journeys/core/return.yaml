@@ -1,0 +1,9 @@
+id: core.return
+name: Return Item
+business_models: [b2c, b2b, marketplace]
+industries: [general]
+use_cases: [return, refund]
+requires: [commerce.order, commerce.return]
+patterns: [shared.orders]
+steps: [select_order, select_item_and_quantity, check_eligibility, choose_reason, choose_return_method, submit, track_return, view_refund]
+optional: [upload_evidence, exchange]
