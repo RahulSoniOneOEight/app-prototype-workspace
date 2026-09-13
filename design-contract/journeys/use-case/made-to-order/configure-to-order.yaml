@@ -1,0 +1,9 @@
+id: use_case.made_to_order_configure
+name: Configure to Order
+business_models: [b2c, b2b]
+industries: [furniture, general]
+use_cases: [made_to_order, configuration]
+requires: [commerce.product, commerce.checkout, commerce.order]
+patterns: [shared.pdp, shared.checkout]
+steps: [choose_base_product, configure_options, validate_configuration, review_lead_time, confirm_price_or_request_quote, approve_spec, place_order]
+optional: [deposit, design_consultation, installation]
