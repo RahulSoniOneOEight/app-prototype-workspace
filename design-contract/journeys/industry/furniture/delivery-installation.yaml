@@ -1,0 +1,9 @@
+id: industry.furniture_delivery_installation
+name: Furniture Delivery and Installation
+business_models: [b2c, b2b]
+industries: [furniture]
+use_cases: [scheduled_delivery, installation, made_to_order]
+requires: [commerce.product, commerce.checkout, commerce.order]
+patterns: [shared.pdp, shared.checkout, shared.orders]
+steps: [evaluate_dimensions_and_finish, confirm_delivery_feasibility, choose_configuration, choose_delivery_slot, choose_installation, place_order_or_quote, confirm_installation_schedule, track_delivery]
+optional: [room_context, assembly_option, project_site]
