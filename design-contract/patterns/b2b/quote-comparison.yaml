@@ -1,0 +1,10 @@
+id: b2b.quote_comparison
+business_models: [b2b, marketplace]
+industries: [general]
+use_cases: [quote_comparison, sourcing, award]
+best_for: [multiple_seller_quotes, commercial_comparison]
+avoid_for: [single_fixed_price_offer]
+required_components: [commerce.price_display, core.button]
+optional_components: [core.badge, core.card]
+responsive: {mobile: stacked_compare, tablet: horizontal_compare, desktop: comparison_table}
+supported_slots: [seller, item_prices, taxes, delivery, payment_terms, validity, total, differences, negotiate, accept, split_award]
