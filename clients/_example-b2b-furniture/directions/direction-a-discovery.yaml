@@ -1,0 +1,33 @@
+id: direction_a
+name: Catalogue discovery
+strategy: discovery_led
+structure:
+  entry: home
+  navigation: hybrid_catalogue_nav
+journeys:
+  primary:
+    - core.browse_to_product
+patterns:
+  home: shared.home
+  category: shared.category
+  plp: shared.plp
+  pdp: shared.pdp
+density: standard
+merchandising:
+  emphasis:
+    - room_collections
+    - category_discovery
+    - complementary_products
+interactions:
+  browse_prominence: primary
+  search_prominence: secondary
+visual_style:
+  hierarchy: editorial_commerce
+  imagery: interiors_lifestyle
+resources:
+  imagery_style: premium_interiors
+  icon_family: iconoir
+  stock_source_priority: [pexels, unsplash]
+tradeoffs:
+  - Less efficient for repeat buyers who already know the SKU.
+rationale: Explore furniture through room, category, and curated collections before purchase or quote.
