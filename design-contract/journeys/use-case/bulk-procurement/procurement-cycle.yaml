@@ -1,0 +1,9 @@
+id: use_case.bulk_procurement_cycle
+name: Bulk Procurement Cycle
+business_models: [b2b, marketplace]
+industries: [construction, furniture, electronics, general]
+use_cases: [bulk_procurement, rfq, approval]
+requires: [commerce.product, commerce.quote, commerce.company_account, commerce.order]
+patterns: [b2b.boq_builder, b2b.rfq, b2b.quote_comparison, b2b.negotiation, b2b.procurement_order]
+steps: [capture_requirement, match_catalogue, issue_rfq, collect_quotes, compare_and_negotiate, approve_award, convert_to_order, fulfill_and_track]
+optional: [split_award, credit, project_site]
