@@ -1,0 +1,8 @@
+id: commerce.return
+purpose: Item-level and partial return vocabulary for post-order flows.
+fields: [order, items, reason, quantity, method, refund_method, status, timeline, evidence]
+statuses: [eligible, requested, approved, rejected, pickup_scheduled, in_transit, received, refunded, closed]
+rules:
+  - Eligibility may differ per order item.
+  - Partial quantity returns must be representable.
+  - Reason and next step should remain visible throughout the journey.
