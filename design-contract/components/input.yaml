@@ -1,0 +1,18 @@
+id: core.input
+name: Input
+category: core.form
+purpose: Reusable text/search/password input with consistent state handling.
+status: approved
+business_models: [b2c, b2b, marketplace, subscription]
+industries: [general]
+use_cases: [forms, search, checkout, account]
+variants: [text, search, password, numeric]
+states: [default, hover, focused, disabled, loading, error]
+density: [compact, standard, spacious]
+responsive: {mobile: supported, tablet: supported, desktop: supported}
+compatible_patterns: ['*']
+requires: []
+avoid_when: [selection_from_fixed_small_option_set]
+accessibility: {label_required: true, error_text_required: true, min_target_px: 44, visible_focus: true}
+source_refs: [momentous-developments/flutter-showcase-app, manishdayma/FluCommerce]
+tags: [input, form, search, primitive]
