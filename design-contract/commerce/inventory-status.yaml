@@ -1,0 +1,12 @@
+id: commerce.inventory_status
+purpose: Consistent customer-facing availability and stock vocabulary.
+states:
+  in_stock: {purchasable: true}
+  limited: {purchasable: true, show_quantity_hint: optional}
+  out_of_stock: {purchasable: false}
+  preorder: {purchasable: true, show_lead_time: true}
+  backorder: {purchasable: true, show_lead_time: true}
+  quote_only: {purchasable: false, request_quote: true}
+fields: [state, available_quantity, lead_time, replenishment_message, location_context]
+rules:
+  - Never communicate availability by color alone.
