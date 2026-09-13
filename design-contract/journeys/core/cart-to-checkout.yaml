@@ -1,0 +1,9 @@
+id: core.cart_to_checkout
+name: Cart to Checkout
+business_models: [b2c, b2b, marketplace]
+industries: [general]
+use_cases: [purchase, checkout]
+requires: [commerce.cart, commerce.checkout, commerce.order]
+patterns: [shared.cart, shared.checkout]
+steps: [review_cart, resolve_warnings, choose_fulfillment, choose_payment_or_terms, review_order, place_order, confirmation]
+optional: [guest_identity, promotion_code, credit_terms]
