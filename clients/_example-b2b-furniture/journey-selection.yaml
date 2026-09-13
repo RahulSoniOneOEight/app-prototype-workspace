@@ -1,0 +1,11 @@
+selected:
+  - b2b.browse_to_bulk_order
+  - b2b.boq_to_rfq
+  - b2b.document_to_catalogue_match
+  - b2b.rfq_to_quotes
+  - b2b.quote_comparison_to_award
+  - b2b.quote_to_order
+  - b2b.credit_purchase
+  - b2b.repeat_procurement
+  - core.order_tracking
+  - core.return
