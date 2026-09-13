@@ -1,0 +1,12 @@
+id: preset.industry.furniture
+kind: industry
+recommended:
+  themes: [theme.premium]
+  patterns: [b2c.discovery_home, shared.plp, shared.pdp, b2b.bulk_product]
+  capabilities: [dimensions, material_finish, room_context, scheduled_delivery, installation]
+  component_variants: {commerce.product_card: premium}
+optional:
+  capabilities: [made_to_order, quote, bulk_procurement, visualization]
+  journeys: [b2b.browse_to_bulk_order, b2b.quote_to_order]
+avoid:
+  capabilities: [quick_commerce_default]
