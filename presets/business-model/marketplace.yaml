@@ -1,0 +1,12 @@
+id: preset.business.marketplace
+kind: business_model
+recommended:
+  themes: [theme.marketplace]
+  patterns: [shared.home, shared.search, shared.plp, shared.pdp, shared.cart, shared.checkout, shared.orders, shared.account]
+  journeys: [core.browse_to_product, core.cart_to_checkout, core.order_tracking, core.return]
+  component_variants: {commerce.product_card: marketplace, commerce.price_display: standard}
+optional:
+  patterns: [b2b.rfq, b2b.quote_comparison]
+  capabilities: [seller_selection, seller_ratings, grouped_fulfillment, multi_seller_checkout]
+avoid:
+  patterns: []
