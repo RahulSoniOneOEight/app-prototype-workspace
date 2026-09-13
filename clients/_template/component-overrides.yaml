@@ -1,0 +1,8 @@
+overrides: []
+example:
+  component_id: commerce.product_card
+  variant: premium
+  reason: Client-approved editorial merchandise treatment.
+rules:
+  - Override by component ID and approved variant before creating client-only components.
+  - Keep client-specific styling in theme.json where possible.
