@@ -1,0 +1,7 @@
+id: commerce.address
+purpose: Reusable delivery/billing/site address concept.
+fields: [label, recipient, line1, line2, locality, city, region, postal_code, country, phone, instructions]
+optional_b2b: [site_name, site_code, tax_registration, receiving_window]
+rules:
+  - Address presentation may vary by country.
+  - Site-specific delivery metadata belongs here only when visible to the user.
