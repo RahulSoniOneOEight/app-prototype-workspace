@@ -1,0 +1,11 @@
+id: preset.use_case.wholesale
+kind: use_case
+recommended:
+  patterns: [b2b.trade_home, shared.plp, b2b.bulk_product, shared.cart]
+  capabilities: [moq, case_pack, uom, tier_pricing, repeat_order, stock_visibility]
+  component_variants: {commerce.product_card: b2b, commerce.price_display: tiered, commerce.quantity_stepper: b2b}
+optional:
+  capabilities: [credit, quote, account_specific_price]
+  journeys: [b2b.browse_to_bulk_order, b2b.repeat_procurement]
+avoid:
+  capabilities: [consumer_only_wishlist_as_primary]
