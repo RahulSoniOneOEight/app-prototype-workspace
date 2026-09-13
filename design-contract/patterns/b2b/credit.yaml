@@ -1,0 +1,10 @@
+id: b2b.credit
+business_models: [b2b]
+industries: [general]
+use_cases: [trade_credit, finance_visibility]
+best_for: [credit_terms, account_purchase]
+avoid_for: [prepaid_only]
+required_components: [core.card, commerce.price_display]
+optional_components: [core.badge, core.button]
+responsive: {mobile: stacked_summary, tablet: dashboard, desktop: dashboard}
+supported_slots: [credit_limit, available, used, overdue, payment_terms, statement, due_invoices, pay_now]
