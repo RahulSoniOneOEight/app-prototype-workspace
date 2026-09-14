@@ -6,10 +6,15 @@ on:
       - 'design-contract/**'
       - 'presets/**'
       - 'experience-directions/**'
+      - 'experience-patterns/**'
       - 'agency-resources/**'
+      - 'resources/**'
+      - 'intelligence-registry/**'
+      - 'packages/agency_flutter_ui/**'
       - 'clients/**'
       - 'scripts/validate_design_contract.py'
       - 'tests/test_validate_design_contract.py'
+      - 'tests/test_layer4_seed.py'
       - 'AGENTS.md'
       - 'REFERENCE_POLICY.md'
       - 'DESIGN_SYSTEM.md'
@@ -21,10 +26,15 @@ on:
       - 'design-contract/**'
       - 'presets/**'
       - 'experience-directions/**'
+      - 'experience-patterns/**'
       - 'agency-resources/**'
+      - 'resources/**'
+      - 'intelligence-registry/**'
+      - 'packages/agency_flutter_ui/**'
       - 'clients/**'
       - 'scripts/validate_design_contract.py'
       - 'tests/test_validate_design_contract.py'
+      - 'tests/test_layer4_seed.py'
       - 'AGENTS.md'
       - 'REFERENCE_POLICY.md'
       - 'DESIGN_SYSTEM.md'
@@ -48,7 +58,9 @@ jobs:
         run: python -m pip install --disable-pip-version-check pyyaml
 
       - name: Run validator unit tests
-        run: python -m unittest tests/test_validate_design_contract.py -v
+        run: |
+          python -m unittest tests/test_validate_design_contract.py -v
+          python -m unittest tests/test_layer4_seed.py -v
 
       - name: Validate design contract registry and client selections
         run: python scripts/validate_design_contract.py
@@ -58,7 +70,7 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-          roots = [Path('design-contract'), Path('clients'), Path('agency-resources')]
+          roots = [Path('design-contract'), Path('clients'), Path('agency-resources'), Path('resources'), Path('intelligence-registry')]
           paths = [p for root in roots if root.exists() for p in root.rglob('*.json')]
           for path in paths:
               json.loads(path.read_text(encoding='utf-8'))
@@ -70,7 +82,7 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           import yaml
-          roots = [Path('design-contract'), Path('presets'), Path('experience-directions'), Path('agency-resources'), Path('clients')]
+          roots = [Path('design-contract'), Path('presets'), Path('experience-directions'), Path('experience-patterns'), Path('agency-resources'), Path('resources'), Path('intelligence-registry'), Path('clients')]
           paths = [p for root in roots if root.exists() for p in root.rglob('*.yaml')]
           for path in paths:
               with path.open(encoding='utf-8') as handle:
