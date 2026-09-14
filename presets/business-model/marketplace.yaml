@@ -1,0 +1,19 @@
+id: preset.business.marketplace
+kind: business_model
+recommended:
+  priorities:
+    seller_transparency: high
+    offer_comparison: high
+    delivery_visibility: high
+    trust: high
+  patterns:
+  - shared.marketplace_pdp
+  - shared.seller_comparison
+  - shared.multi_seller_cart
+  - shared.seller_offer
+  journeys:
+  - marketplace.seller_compare_to_purchase
+  - core.order_tracking
+metadata:
+  maturity: seed
+  client_agnostic: true

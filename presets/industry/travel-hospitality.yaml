@@ -1,0 +1,23 @@
+id: preset.industry.travel-hospitality
+kind: industry
+name: Travel & Hospitality
+industry_characteristics:
+- availability
+- date_selection
+- inventory
+- trust
+- itinerary
+recommended:
+  patterns:
+  - shared.search
+  - shared.availability
+  - shared.booking_summary
+  experience_patterns:
+  - search-first
+  - guided-selling
+resource_guidance:
+  imagery: fit_to_industry_and_client_brand
+  icons: semantic_and_consistent
+metadata:
+  maturity: seed
+  client_agnostic: true

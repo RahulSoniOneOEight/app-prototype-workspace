@@ -1,0 +1,37 @@
+id: energetic-commerce-lime-electric
+name: Lime Electric
+parent_preset: energetic-commerce
+option: C
+source_colors:
+- '#F1F7B5'
+- '#B6E388'
+- '#E1FFB1'
+- '#617A55'
+metadata:
+  warmth: warm
+  saturation: high
+  contrast: medium
+best_for:
+- grocery
+- sustainability
+- youth commerce
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#617A55'
+  brand_secondary: '#E1FFB1'
+  background: '#F1F7B5'
+  surface: '#FFFFFF'
+  surface_alt: '#B6E388'
+  text_primary: '#617A55'
+  text_secondary: '#E1FFB1'
+  border: '#B6E388'
+  accent: '#E1FFB1'
+  cta: '#617A55'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

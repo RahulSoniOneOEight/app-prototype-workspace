@@ -1,0 +1,13 @@
+id: preset.use_case.booking
+kind: use_case
+recommended:
+  patterns:
+  - shared.availability
+  - shared.booking_summary
+  journeys:
+  - service.discover_to_booking
+  experience_patterns:
+  - guided-selling
+metadata:
+  maturity: seed
+  client_agnostic: true

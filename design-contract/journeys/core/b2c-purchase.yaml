@@ -1,0 +1,14 @@
+id: core.b2c-purchase
+kind: journey
+steps:
+- id: home_or_search
+- id: plp
+- id: pdp
+- id: cart
+- id: checkout
+- id: confirmation
+- id: tracking
+metadata:
+  maturity: seed
+  source_reference: b2b+b2c prototype
+  client_agnostic: true

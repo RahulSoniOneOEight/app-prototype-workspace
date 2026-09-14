@@ -1,0 +1,12 @@
+id: preset.industry.fashion
+kind: industry
+recommended:
+  themes: [theme.premium]
+  patterns: [b2c.discovery_home, shared.plp, shared.pdp, b2c.related_products]
+  capabilities: [size_variant, color_variant, wishlist, editorial_imagery, returns]
+  component_variants: {commerce.product_card: premium}
+optional:
+  capabilities: [size_guide, fit_advice, complete_the_look]
+  journeys: [core.return]
+avoid:
+  capabilities: [dense_technical_specification]

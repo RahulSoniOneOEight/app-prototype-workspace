@@ -1,0 +1,10 @@
+id: b2c.related-products
+kind: pattern
+slots:
+- complementary
+- recently_viewed
+- deals
+metadata:
+  maturity: seed
+  source_reference: b2b+b2c prototype
+  client_agnostic: true

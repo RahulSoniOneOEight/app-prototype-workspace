@@ -1,0 +1,40 @@
+id: trade-led
+name: Trade-first procurement experience
+strategy: trade_led
+structure:
+  entry: trade_dashboard
+  navigation: trade_bottom_nav
+journeys:
+  primary:
+    - b2b.browse_to_bulk_order
+    - b2b.boq_to_rfq
+    - b2b.quote_to_order
+patterns:
+  home: b2b.trade_home
+  product: b2b.bulk_product
+  boq: b2b.boq_builder
+  rfq: b2b.rfq
+  order: b2b.procurement_order
+density: compact
+merchandising:
+  emphasis:
+    - recent_orders
+    - frequently_bought
+    - contract_pricing
+interactions:
+  quick_order: primary
+  rfq: primary
+  discovery: secondary
+visual_style:
+  hierarchy: information_dense
+  imagery: technical
+resources:
+  imagery_style: technical
+  icon_family: iconoir
+capabilities:
+  credit: true
+  rfq: true
+  bulk_pricing: true
+tradeoffs:
+  - Less approachable for casual retail consumers.
+rationale: Best for repeat, bulk, negotiated, and account-based procurement.

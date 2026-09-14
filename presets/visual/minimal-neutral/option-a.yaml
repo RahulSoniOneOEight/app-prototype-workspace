@@ -1,0 +1,38 @@
+id: minimal-neutral-clean-utility
+name: Clean Utility
+parent_preset: minimal-neutral
+option: A
+source_colors:
+- '#F9F7F7'
+- '#DBE2EF'
+- '#3F72AF'
+- '#112D4E'
+metadata:
+  warmth: cool
+  saturation: low
+  contrast: medium
+best_for:
+- SaaS
+- ERP
+- admin
+- utilities
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#112D4E'
+  brand_secondary: '#3F72AF'
+  background: '#F9F7F7'
+  surface: '#FFFFFF'
+  surface_alt: '#DBE2EF'
+  text_primary: '#112D4E'
+  text_secondary: '#3F72AF'
+  border: '#DBE2EF'
+  accent: '#3F72AF'
+  cta: '#112D4E'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

@@ -1,0 +1,8 @@
+id: variant.home
+variants:
+- minimal
+- editorial
+- discovery-first
+- promotion-heavy
+- marketplace
+- trade

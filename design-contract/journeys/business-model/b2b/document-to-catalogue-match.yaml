@@ -1,0 +1,9 @@
+id: b2b.document_to_catalogue_match
+name: Document to Catalogue Match
+business_models: [b2b]
+industries: [construction, furniture, electronics, general]
+use_cases: [document_upload, catalogue_match, boq]
+requires: [commerce.product]
+patterns: [b2b.boq_builder]
+steps: [upload_document, extract_lines, show_confidence, suggest_catalogue_matches, review_matches, resolve_unmatched, confirm_boq]
+optional: [manual_entry, replace_match]

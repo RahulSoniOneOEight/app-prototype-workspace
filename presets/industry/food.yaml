@@ -1,0 +1,11 @@
+id: preset.industry.food
+kind: industry
+recommended:
+  patterns: [shared.home, shared.category, shared.pdp, shared.cart, shared.checkout]
+  capabilities: [menu_modifiers, delivery_or_pickup, delivery_slot, dietary_labels]
+  component_variants: {commerce.product_card: standard}
+optional:
+  capabilities: [branch_selection, scheduled_order, reorder, loyalty]
+  journeys: [core.cart_to_checkout, b2c.reorder]
+avoid:
+  capabilities: [specification_heavy_pdp, long_quote_flow]

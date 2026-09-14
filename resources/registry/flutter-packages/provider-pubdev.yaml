@@ -1,0 +1,4 @@
+id: pubdev-provider
+type: package_source
+status: approved-source
+selection_rules: [maintenance, license, platform_support, api_stability]

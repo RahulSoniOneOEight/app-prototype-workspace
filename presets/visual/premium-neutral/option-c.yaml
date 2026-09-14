@@ -1,0 +1,37 @@
+id: premium-neutral-high-contrast-luxury
+name: High Contrast Luxury
+parent_preset: premium-neutral
+option: C
+source_colors:
+- '#F5F5F5'
+- '#D6C7AE'
+- '#967E76'
+- '#2B2B2B'
+metadata:
+  warmth: warm
+  saturation: low
+  contrast: high
+best_for:
+- luxury commerce
+- automotive
+- hospitality
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#2B2B2B'
+  brand_secondary: '#967E76'
+  background: '#F5F5F5'
+  surface: '#FFFFFF'
+  surface_alt: '#D6C7AE'
+  text_primary: '#2B2B2B'
+  text_secondary: '#967E76'
+  border: '#D6C7AE'
+  accent: '#967E76'
+  cta: '#2B2B2B'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

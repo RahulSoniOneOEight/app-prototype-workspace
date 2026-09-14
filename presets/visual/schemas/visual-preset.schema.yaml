@@ -1,0 +1,2 @@
+type: object
+required: [id, kind, name, options, metadata]

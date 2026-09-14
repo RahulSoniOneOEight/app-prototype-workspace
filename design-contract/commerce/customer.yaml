@@ -1,0 +1,6 @@
+id: commerce.customer
+purpose: Shared customer/buyer identity and account vocabulary for UI flows.
+fields: [id, display_name, email, phone, addresses, preferences, saved_items, orders]
+optional_b2b: [company, role, permissions, cost_center, approval_limit]
+rules:
+  - Authentication and storage implementation are out of scope.

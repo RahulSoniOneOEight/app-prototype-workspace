@@ -1,0 +1,6 @@
+id: commerce.promotion
+purpose: Shared promotional and merchandising offer vocabulary.
+fields: [id, type, label, message, eligibility, start_at, end_at, discount, benefit, exclusions]
+types: [percentage, fixed, buy_more_save_more, bundle, coupon, free_delivery, loyalty]
+rules:
+  - Eligibility and exclusions must be visible when material to purchase decisions.

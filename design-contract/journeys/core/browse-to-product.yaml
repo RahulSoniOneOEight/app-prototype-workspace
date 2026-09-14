@@ -1,0 +1,9 @@
+id: core.browse_to_product
+name: Browse to Product
+business_models: [b2c, b2b, marketplace]
+industries: [general]
+use_cases: [discovery, product_evaluation]
+requires: [commerce.product, commerce.category]
+patterns: [shared.home, shared.category, shared.plp, shared.pdp]
+steps: [enter_commerce, browse_or_search, view_listing, select_product, evaluate_product]
+optional: [wishlist, compare, recommendations]

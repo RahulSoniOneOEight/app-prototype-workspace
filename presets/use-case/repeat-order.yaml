@@ -1,0 +1,13 @@
+id: preset.use_case.repeat-order
+kind: use_case
+recommended:
+  patterns:
+  - shared.repeat_order
+  - shared.order_history
+  journeys:
+  - b2b.repeat_procurement
+  experience_patterns:
+  - reorder-first
+metadata:
+  maturity: seed
+  client_agnostic: true

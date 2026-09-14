@@ -1,0 +1,13 @@
+id: preset.use_case.quick-order
+kind: use_case
+recommended:
+  patterns:
+  - shared.quick_order
+  - shared.search
+  journeys:
+  - b2b.browse_to_bulk_order
+  experience_patterns:
+  - trade-first
+metadata:
+  maturity: seed
+  client_agnostic: true

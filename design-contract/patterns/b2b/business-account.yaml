@@ -1,0 +1,11 @@
+id: b2b.business_account
+business_models: [b2b]
+industries: [general]
+use_cases: [company_account, user_management, approvals]
+best_for: [multi_user_buying_organization]
+avoid_for: [consumer_account_only]
+required_components: [core.navigation, core.card]
+optional_components: [core.button, core.input]
+responsive: {mobile: section_list, tablet: master_detail, desktop: side_navigation}
+supported_slots: [company_profile, users, roles, addresses, tax_details, approval_policy, credit, payment_terms]
+extends: shared.account

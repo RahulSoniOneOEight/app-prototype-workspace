@@ -1,0 +1,9 @@
+id: b2b.quote_comparison_to_award
+name: Quote Comparison to Award
+business_models: [b2b, marketplace]
+industries: [general]
+use_cases: [quote_comparison, award]
+requires: [commerce.quote, commerce.seller]
+patterns: [b2b.quote_comparison]
+steps: [compare_quotes, review_price_delivery_terms, shortlist, choose_full_or_split_award, confirm_award]
+optional: [negotiate, approval_before_award]

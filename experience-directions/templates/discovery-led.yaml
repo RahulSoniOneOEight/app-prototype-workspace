@@ -1,0 +1,31 @@
+id: discovery-led
+name: Discovery-led consumer experience
+strategy: discovery_led
+structure:
+  entry: home
+  navigation: consumer_bottom_nav
+journeys:
+  primary:
+    - b2c.discovery_to_purchase
+patterns:
+  home: b2c.discovery_home
+  plp: shared.plp
+  pdp: shared.pdp
+density: spacious
+merchandising:
+  emphasis:
+    - category_discovery
+    - collections
+    - recommendations
+interactions:
+  search_prominence: secondary
+  browse_prominence: primary
+visual_style:
+  hierarchy: editorial
+  imagery: lifestyle
+resources:
+  imagery_style: editorial
+  icon_family: iconoir
+tradeoffs:
+  - Slower for buyers who already know the exact SKU they need.
+rationale: Best when discovery, inspiration, and merchandising drive conversion.

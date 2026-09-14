@@ -1,0 +1,22 @@
+id: search-field
+kind: component
+purpose:
+- query_catalogue
+- start_known_item_journey
+required_fields:
+- query
+optional_fields:
+- suggestions
+- recent_searches
+- filters
+variants:
+- standard
+- prominent
+- b2b
+platforms:
+- mobile
+- web
+metadata:
+  maturity: seed
+  source_reference: b2b+b2c prototype
+  client_agnostic: true

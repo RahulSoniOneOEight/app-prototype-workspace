@@ -1,0 +1,5 @@
+{
+  "id":"theme.client-template",
+  "extends":"theme.base",
+  "overrideSlots":{"colors":["brandPrimary","brandSecondary","brandTertiary"],"typography":["family","headingWeight"],"radius":["card","button","input"],"density":["compact","standard","spacious"],"imagery":["style"],"motion":["personality"]}
+}

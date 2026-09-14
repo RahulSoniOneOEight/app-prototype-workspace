@@ -1,0 +1,16 @@
+preset_scoring:
+  experience_fit: 0.2
+  brand_fit: 0.2
+  industry_fit: 0.15
+  audience_fit: 0.1
+  product_fit: 0.15
+  existing_brand_fit: 0.1
+  accessibility_fit: 0.1
+palette_scoring:
+  brand_fit: 0.25
+  visual_trait_fit: 0.2
+  interface_fit: 0.15
+  existing_brand_fit: 0.15
+  audience_fit: 0.1
+  accessibility_fit: 0.1
+  differentiation: 0.05

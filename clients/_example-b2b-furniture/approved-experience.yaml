@@ -1,0 +1,19 @@
+base_direction: direction_a
+composition:
+  home:
+    from: direction_a
+  search:
+    from: direction_b
+  trade:
+    from: direction_c
+  quote:
+    from: direction_c
+  order:
+    from: direction_c
+theme:
+  from: direction_a
+client_changes:
+  - Keep prominent search on the discovery-led home.
+  - Keep a trade shortcut in primary navigation.
+  - Preserve trade credit visibility for authenticated business buyers.
+status: example

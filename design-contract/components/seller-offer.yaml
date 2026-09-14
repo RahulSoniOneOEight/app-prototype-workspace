@@ -1,0 +1,25 @@
+id: seller-offer
+kind: component
+purpose:
+- represent_marketplace_offer
+- support_seller_comparison
+required_fields:
+- seller_name
+- price
+optional_fields:
+- rating
+- delivery
+- stock
+- verified
+- moq
+variants:
+- standard
+- compact
+- b2b
+platforms:
+- mobile
+- web
+metadata:
+  maturity: seed
+  source_reference: b2b+b2c prototype
+  client_agnostic: true

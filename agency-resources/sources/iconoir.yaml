@@ -1,0 +1,16 @@
+id: iconoir
+resource_types: [icons]
+search:
+  method: package_catalog
+  supports: [query, semantic_name]
+evaluation:
+  check: [license, semantic_fit, visual_consistency, flutter_support, icon_availability]
+usage:
+  prototype:
+    preferred: flutter_package
+  production:
+    preferred: flutter_package
+provenance:
+  store: [provider, asset_id, source_url, license, query, package_version, usage]
+notes:
+  - Primary agency icon family unless the client brief requires another approved family.

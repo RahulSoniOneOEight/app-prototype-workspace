@@ -1,0 +1,10 @@
+{
+  "id":"theme.premium",
+  "extends":"theme.base",
+  "density":"spacious",
+  "typography":{"familySlot":"brand","headingWeight":600},
+  "radius":{"card":"radius.xl","button":"radius.xl"},
+  "elevation":{"card":"elevation.subtle"},
+  "motion":{"personality":"soft","default":"motion.normal"},
+  "imagery":{"style":"editorial","crop":"subject-led"}
+}

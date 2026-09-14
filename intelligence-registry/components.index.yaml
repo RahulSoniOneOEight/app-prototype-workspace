@@ -1,0 +1,31 @@
+items:
+- id: product-card
+  path: design-contract/components/product-card.yaml
+  tags:
+  - commerce
+  - product
+  - b2c
+  - b2b
+  - marketplace
+- id: price-display
+  path: design-contract/components/price-display.yaml
+  tags:
+  - pricing
+  - b2c
+  - b2b
+- id: verified-badge
+  path: design-contract/components/verified-badge.yaml
+  tags:
+  - trust
+  - marketplace
+- id: seller-offer
+  path: design-contract/components/seller-offer.yaml
+  tags:
+  - marketplace
+  - seller
+  - pricing
+- id: delivery-status
+  path: design-contract/components/delivery-status.yaml
+  tags:
+  - delivery
+  - order

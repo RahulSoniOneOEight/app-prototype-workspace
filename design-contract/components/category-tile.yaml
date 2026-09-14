@@ -1,0 +1,18 @@
+id: commerce.category_tile
+name: CategoryTile
+category: commerce.navigation
+purpose: Represent a shoppable category or department.
+status: approved
+business_models: [b2c, b2b, marketplace]
+industries: [general]
+use_cases: [category_navigation, discovery]
+variants: [image, icon, compact, editorial]
+states: [default, hover, pressed, focused, disabled]
+density: [compact, standard, spacious]
+responsive: {mobile: supported, tablet: supported, desktop: supported}
+compatible_patterns: [shared.home, shared.category, shared.search]
+requires: [core.card]
+avoid_when: [deep_faceted_filter]
+accessibility: {semantic_label_required: true, min_target_px: 44}
+source_refs: [robertodevs/flutter_ecommerce_template, manishdayma/FluCommerce]
+tags: [category, navigation, discovery]

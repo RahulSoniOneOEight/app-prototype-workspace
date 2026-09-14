@@ -1,0 +1,13 @@
+id: business-model.b2b-bulk-order
+kind: journey
+steps:
+- id: trade_home
+- id: search
+- id: bulk_product
+- id: cart
+- id: checkout
+- id: confirmation
+metadata:
+  maturity: seed
+  source_reference: b2b+b2c prototype
+  client_agnostic: true

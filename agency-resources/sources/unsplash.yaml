@@ -1,0 +1,16 @@
+id: unsplash
+resource_types: [stock_photography, product_imagery]
+search:
+  method: api
+  supports: [query, orientation, color]
+evaluation:
+  check: [license, subject_fit, visual_consistency, resolution, orientation, crop_suitability]
+usage:
+  prototype:
+    preferred: remote_url
+  production:
+    preferred: reviewed_download_or_cdn
+provenance:
+  store: [provider, asset_id, source_url, license, query, creator, selected_at, usage]
+notes:
+  - Prefer lifestyle and editorial use; do not imply a stock image is the client's exact product.

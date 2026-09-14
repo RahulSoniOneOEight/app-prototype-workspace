@@ -1,0 +1,15 @@
+id: premium-dark
+kind: visual_preset
+name: Premium Dark
+description: Premium Dark visual direction family.
+options:
+- premium-dark-black-gold
+- premium-dark-midnight-luxury
+- premium-dark-charcoal-copper
+three_option_semantics:
+  A: safest / broadly applicable
+  B: differentiated / contemporary
+  C: stronger / exploratory
+metadata:
+  maturity: seed
+  client_agnostic: true

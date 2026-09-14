@@ -1,0 +1,8 @@
+sources:
+- id: figma-color-schemes
+  type: reference
+  url: https://www.figma.com/resource-library/website-color-schemes/
+- id: color-hunt
+  type: palette_reference
+  url: https://colorhunt.co/palettes/popular
+policy: Record exact external palette URL/ID when a specific palette is adopted.

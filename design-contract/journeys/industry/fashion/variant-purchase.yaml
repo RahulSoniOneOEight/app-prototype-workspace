@@ -1,0 +1,9 @@
+id: industry.fashion_variant_purchase
+name: Fashion Variant Purchase
+business_models: [b2c, marketplace]
+industries: [fashion]
+use_cases: [size_selection, color_selection, returns]
+requires: [commerce.product, commerce.cart, commerce.checkout]
+patterns: [shared.plp, shared.pdp, b2c.related_products, b2c.consumer_checkout]
+steps: [discover_product, choose_color, choose_size, consult_size_guide_if_needed, add_to_cart, checkout, track_order]
+optional: [wishlist, complete_the_look, return_or_exchange]

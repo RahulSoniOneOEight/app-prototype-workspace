@@ -1,0 +1,14 @@
+id: pixabay
+resource_types: [stock_photography, stock_video, illustrations]
+search:
+  method: api
+  supports: [query, orientation, category]
+evaluation:
+  check: [license, subject_fit, visual_consistency, resolution, orientation]
+usage:
+  prototype:
+    preferred: remote_url
+  production:
+    preferred: reviewed_download_or_cdn
+provenance:
+  store: [provider, asset_id, source_url, license, query, creator, selected_at, usage]

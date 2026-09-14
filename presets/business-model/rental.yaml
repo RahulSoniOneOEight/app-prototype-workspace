@@ -1,0 +1,15 @@
+id: preset.business.rental
+kind: business_model
+recommended:
+  priorities:
+    availability: high
+    date_selection: high
+    deposit_clarity: high
+  patterns:
+  - shared.availability
+  - shared.rental_terms
+  journeys:
+  - rental.reserve_to_return
+metadata:
+  maturity: seed
+  client_agnostic: true

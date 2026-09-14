@@ -1,0 +1,37 @@
+id: expressive-coral-electric
+name: Coral Electric
+parent_preset: expressive
+option: B
+source_colors:
+- '#FFDDD2'
+- '#E29578'
+- '#83C5BE'
+- '#006D77'
+metadata:
+  warmth: warm
+  saturation: high
+  contrast: high
+best_for:
+- lifestyle
+- D2C
+- events
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#006D77'
+  brand_secondary: '#83C5BE'
+  background: '#FFDDD2'
+  surface: '#FFFFFF'
+  surface_alt: '#E29578'
+  text_primary: '#006D77'
+  text_secondary: '#83C5BE'
+  border: '#E29578'
+  accent: '#83C5BE'
+  cta: '#006D77'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

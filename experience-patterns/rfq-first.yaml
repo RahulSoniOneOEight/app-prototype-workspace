@@ -1,0 +1,16 @@
+id: rfq-first
+kind: experience_pattern
+objective:
+- negotiated_procurement
+- multi_seller_sourcing
+primary_entry_points:
+- rfq
+- boq
+recommended_patterns:
+- b2b.rfq
+- b2b.quote-comparison
+de_emphasize:
+- consumer_checkout_first
+metadata:
+  maturity: seed
+  client_agnostic: true

@@ -1,0 +1,12 @@
+id: b2b.bulk-product
+kind: pattern
+slots:
+- uom
+- moq
+- tier_price
+- stock
+- bulk_quantity
+metadata:
+  maturity: seed
+  source_reference: b2b+b2c prototype
+  client_agnostic: true

@@ -1,0 +1,9 @@
+id: commerce.checkout
+purpose: Shared order-finalization vocabulary independent of backend implementation.
+steps: [identity, address, fulfillment, payment, review, confirmation]
+fields: [customer, addresses, delivery_method, delivery_slot, payment_method, billing, order_summary, consent]
+optional_b2b: [purchase_order, approval, credit_terms, tax_identity]
+optional_marketplace: [seller_fulfillment_groups]
+rules:
+  - Steps may collapse or reorder by use case, but required information must remain explicit.
+  - Guest checkout is a journey choice, not a separate commerce schema.

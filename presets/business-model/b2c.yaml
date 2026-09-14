@@ -1,0 +1,24 @@
+id: preset.business.b2c
+kind: business_model
+recommended:
+  priorities:
+    discovery: high
+    search: high
+    merchandising: high
+    checkout_speed: high
+  patterns:
+  - shared.search
+  - shared.plp
+  - shared.pdp
+  - b2c.discovery_home
+  - b2c.consumer_checkout
+  - b2c.related_products
+  journeys:
+  - core.browse_to_product
+  - b2c.discovery_to_purchase
+  - b2c.consumer_checkout
+  - core.order_tracking
+  - core.return
+metadata:
+  maturity: seed
+  client_agnostic: true

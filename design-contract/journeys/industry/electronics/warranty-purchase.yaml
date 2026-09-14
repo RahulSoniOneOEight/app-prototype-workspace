@@ -1,0 +1,9 @@
+id: industry.electronics_warranty_purchase
+name: Electronics Product and Warranty Purchase
+business_models: [b2c, b2b, marketplace]
+industries: [electronics]
+use_cases: [technical_comparison, warranty, compatibility]
+requires: [commerce.product, commerce.cart, commerce.checkout]
+patterns: [shared.search, shared.plp, shared.pdp, shared.checkout]
+steps: [search_or_filter, compare_specs, check_compatibility, choose_variant, choose_warranty, review_delivery, checkout]
+optional: [trade_in, installation, repair_service]

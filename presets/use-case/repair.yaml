@@ -1,0 +1,11 @@
+id: preset.use_case.repair
+kind: use_case
+recommended:
+  patterns: [shared.search, shared.account, shared.orders]
+  capabilities: [device_or_item_identification, issue_capture, diagnosis, quote, service_status]
+  component_variants: {core.card: interactive}
+optional:
+  capabilities: [pickup_drop, spare_parts, warranty_check]
+  journeys: []
+avoid:
+  capabilities: [standard_cart_as_primary_service_flow]

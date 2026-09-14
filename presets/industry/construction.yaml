@@ -1,0 +1,11 @@
+id: preset.industry.construction
+kind: industry
+recommended:
+  patterns: [b2b.trade_home, shared.search, shared.plp, b2b.bulk_product, b2b.boq_builder, b2b.rfq, b2b.quote_comparison]
+  capabilities: [sku_search, technical_specs, boq, site_delivery, moq, uom, tier_pricing, rfq]
+  component_variants: {commerce.product_card: b2b, commerce.price_display: tiered}
+optional:
+  capabilities: [document_to_catalogue_match, project_approval, split_award, credit]
+  journeys: [b2b.document_to_catalogue_match, b2b.boq_to_rfq, b2b.quote_comparison_to_award]
+avoid:
+  capabilities: [consumer_editorial_first]

@@ -1,0 +1,9 @@
+id: use_case.quick_commerce_fast_order
+name: Quick Commerce Fast Order
+business_models: [b2c]
+industries: [grocery, food, general]
+use_cases: [quick_commerce, fast_delivery]
+requires: [commerce.product, commerce.cart, commerce.checkout, commerce.order]
+patterns: [b2c.discovery_home, shared.search, shared.plp, shared.cart, b2c.consumer_checkout]
+steps: [confirm_location, search_or_reorder, add_items, review_eta_and_substitutions, compact_checkout, live_track]
+optional: [saved_basket, scheduled_delivery]

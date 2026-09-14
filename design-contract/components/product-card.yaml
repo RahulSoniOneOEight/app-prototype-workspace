@@ -1,0 +1,27 @@
+id: commerce.product_card
+name: ProductCard
+category: commerce.product
+purpose: Display a purchasable or quotable product in discovery, listing and recommendation contexts.
+status: approved
+business_models: [b2c, b2b, marketplace]
+industries: [general]
+use_cases: [product_listing, recommendations, merchandising, bulk_purchase]
+variants:
+  standard: {recommended_for: [b2c, general_commerce]}
+  premium: {recommended_for: [fashion, furniture, beauty]}
+  marketplace: {recommended_for: [marketplace], supports: [seller, delivery_summary]}
+  b2b: {recommended_for: [b2b, wholesale, procurement], supports: [moq, tier_price, request_quote, stock_status]}
+  list: {recommended_for: [search, comparison, desktop]}
+states: [default, loading, out_of_stock, image_error, wishlisted, disabled]
+density: [compact, standard, spacious]
+responsive: {mobile: supported, tablet: supported, desktop: supported}
+compatible_patterns: [shared.home, shared.plp, shared.pdp, b2c.related_products, b2b.bulk_product]
+requires: [commerce.price_display, commerce.rating, core.badge]
+avoid_when: [service_only_item, quote_without_catalogue_item]
+accessibility: {min_target_px: 44, semantic_image_label: true, non_color_stock_state: true}
+source_refs: [robertodevs/flutter_ecommerce_template, momentous-developments/flutter-showcase-app, manishdayma/FluCommerce]
+tags: [product, card, grid, list, commerce]
+anatomy:
+  required: [image, title, price]
+  optional: [brand, rating, review_count, original_price, discount, wishlist, quick_add, new_badge, stock_status, moq, tier_price, seller]
+rules: {image_ratio: '1:1', title_max_lines: 2, padding: semantic.card, radius: semantic.card, title_style: commerce.productTitle, price_style: commerce.price}

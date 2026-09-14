@@ -1,0 +1,15 @@
+id: premium-neutral
+kind: visual_preset
+name: Premium Neutral
+description: Premium Neutral visual direction family.
+options:
+- premium-neutral-quiet-luxury
+- premium-neutral-contemporary-luxury
+- premium-neutral-high-contrast-luxury
+three_option_semantics:
+  A: safest / broadly applicable
+  B: differentiated / contemporary
+  C: stronger / exploratory
+metadata:
+  maturity: seed
+  client_agnostic: true

@@ -1,0 +1,9 @@
+id: commerce.order
+purpose: Shared post-purchase order and fulfillment vocabulary.
+fields: [id, placed_at, items, totals, payment_state, fulfillment_state, delivery, invoices, actions]
+payment_states: [pending, authorized, paid, partially_paid, refunded, failed]
+fulfillment_states: [unfulfilled, processing, partially_fulfilled, shipped, delivered, cancelled]
+optional_b2b: [source_quote, purchase_order, company, buyer, approval]
+rules:
+  - Partial fulfillment must be representable at item level.
+  - Available actions depend on state and policy.

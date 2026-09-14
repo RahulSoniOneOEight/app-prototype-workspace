@@ -1,0 +1,11 @@
+id: commerce.pricing
+purpose: Common vocabulary for visible commerce pricing states.
+states:
+  retail: [price]
+  promotional: [price, original_price, discount]
+  tiered: [tiers, min_quantity, unit_price]
+  negotiated: [list_price, negotiated_price, validity]
+  quote_pending: [label, request_quote]
+rules:
+  - Currency formatting is presentation-layer behavior.
+  - Do not infer a discount when original_price is absent.

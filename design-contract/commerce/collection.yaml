@@ -1,0 +1,7 @@
+id: commerce.collection
+purpose: Curated product grouping used for merchandising independent of category hierarchy.
+fields: [id, title, subtitle, products, rule, campaign, placement, priority]
+examples: [new_arrivals, best_sellers, recently_viewed, complementary, deals]
+rules:
+  - Collections may be manual or rule-driven.
+  - Collection placement belongs to patterns, not this contract.

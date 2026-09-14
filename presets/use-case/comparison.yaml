@@ -1,0 +1,13 @@
+id: preset.use_case.comparison
+kind: use_case
+recommended:
+  patterns:
+  - shared.comparison
+  - shared.seller_comparison
+  journeys:
+  - marketplace.seller_compare_to_purchase
+  experience_patterns:
+  - search-first
+metadata:
+  maturity: seed
+  client_agnostic: true

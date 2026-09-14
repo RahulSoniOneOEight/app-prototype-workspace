@@ -1,0 +1,19 @@
+id: trade-first
+kind: experience_pattern
+objective:
+- repeat_business_buyers
+- bulk_procurement
+primary_entry_points:
+- search
+- quick_order
+- rfq
+recommended_patterns:
+- b2b.trade-home
+- b2b.bulk-product
+- b2b.rfq
+- b2b.credit
+de_emphasize:
+- lifestyle_merchandising
+metadata:
+  maturity: seed
+  client_agnostic: true

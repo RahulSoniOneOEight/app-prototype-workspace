@@ -1,0 +1,37 @@
+id: expressive-magenta-contrast
+name: Magenta Contrast
+parent_preset: expressive
+option: C
+source_colors:
+- '#FDE2F3'
+- '#E5BEEC'
+- '#917FB3'
+- '#2A2F4F'
+metadata:
+  warmth: cool
+  saturation: high
+  contrast: high
+best_for:
+- beauty
+- entertainment
+- social products
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#2A2F4F'
+  brand_secondary: '#917FB3'
+  background: '#FDE2F3'
+  surface: '#FFFFFF'
+  surface_alt: '#E5BEEC'
+  text_primary: '#2A2F4F'
+  text_secondary: '#917FB3'
+  border: '#E5BEEC'
+  accent: '#917FB3'
+  cta: '#2A2F4F'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

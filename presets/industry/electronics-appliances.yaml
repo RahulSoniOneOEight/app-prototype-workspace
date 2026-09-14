@@ -1,0 +1,23 @@
+id: preset.industry.electronics-appliances
+kind: industry
+name: Electronics & Appliances
+industry_characteristics:
+- specifications
+- comparison
+- warranty
+- seller_offers
+recommended:
+  patterns:
+  - shared.search
+  - shared.comparison
+  - shared.marketplace_pdp
+  - shared.seller_comparison
+  experience_patterns:
+  - search-first
+  - discovery-first
+resource_guidance:
+  imagery: fit_to_industry_and_client_brand
+  icons: semantic_and_consistent
+metadata:
+  maturity: seed
+  client_agnostic: true

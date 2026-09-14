@@ -1,0 +1,10 @@
+id: b2b.boq_builder
+business_models: [b2b]
+industries: [construction, furniture, general]
+use_cases: [boq, bulk_procurement, document_to_catalogue_match]
+best_for: [multi_line_procurement, project_buying]
+avoid_for: [single_item_purchase]
+required_components: [core.input, core.button, commerce.quantity_stepper]
+optional_components: [commerce.product_card, core.badge]
+responsive: {mobile: stepper, tablet: editable_list, desktop: editable_table}
+supported_slots: [upload, extracted_lines, catalogue_matches, unmatched_lines, quantities, site, notes, save, create_rfq]

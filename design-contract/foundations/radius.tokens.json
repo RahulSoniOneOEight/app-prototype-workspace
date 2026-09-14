@@ -1,0 +1,19 @@
+{
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "radius": {
+    "sm": {"$type":"dimension","$value":{"value":4,"unit":"px"}},
+    "md": {"$type":"dimension","$value":{"value":8,"unit":"px"}},
+    "lg": {"$type":"dimension","$value":{"value":12,"unit":"px"}},
+    "xl": {"$type":"dimension","$value":{"value":16,"unit":"px"}},
+    "round": {"$type":"dimension","$value":{"value":24,"unit":"px"}},
+    "circle": {"$type":"dimension","$value":{"value":999,"unit":"px"}}
+  },
+  "semantic": {
+    "button": {"$type":"dimension","$value":"{radius.lg}"},
+    "card": {"$type":"dimension","$value":"{radius.lg}"},
+    "input": {"$type":"dimension","$value":"{radius.lg}"},
+    "sheet": {"$type":"dimension","$value":"{radius.xl}"},
+    "chip": {"$type":"dimension","$value":"{radius.md}"},
+    "pill": {"$type":"dimension","$value":"{radius.circle}"}
+  }
+}

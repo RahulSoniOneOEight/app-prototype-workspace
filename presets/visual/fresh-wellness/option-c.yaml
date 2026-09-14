@@ -1,0 +1,37 @@
+id: fresh-wellness-botanical-soft
+name: Botanical Soft
+parent_preset: fresh-wellness
+option: C
+source_colors:
+- '#F1F8E8'
+- '#D6E8DB'
+- '#C1D0B5'
+- '#658864'
+metadata:
+  warmth: neutral
+  saturation: low
+  contrast: medium
+best_for:
+- nutrition
+- natural products
+- wellness
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#658864'
+  brand_secondary: '#C1D0B5'
+  background: '#F1F8E8'
+  surface: '#FFFFFF'
+  surface_alt: '#D6E8DB'
+  text_primary: '#658864'
+  text_secondary: '#C1D0B5'
+  border: '#D6E8DB'
+  accent: '#C1D0B5'
+  cta: '#658864'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

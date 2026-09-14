@@ -1,0 +1,37 @@
+id: energetic-commerce-red-peach
+name: Red Peach
+parent_preset: energetic-commerce
+option: B
+source_colors:
+- '#FFEADD'
+- '#FCAEAE'
+- '#FF8989'
+- '#FF6666'
+metadata:
+  warmth: warm
+  saturation: high
+  contrast: high
+best_for:
+- sales events
+- D2C
+- consumer retail
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#FF6666'
+  brand_secondary: '#FF8989'
+  background: '#FFEADD'
+  surface: '#FFFFFF'
+  surface_alt: '#FCAEAE'
+  text_primary: '#FF6666'
+  text_secondary: '#FF8989'
+  border: '#FCAEAE'
+  accent: '#FF8989'
+  cta: '#FF6666'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

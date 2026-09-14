@@ -1,0 +1,38 @@
+version: 1
+purpose: Route OpenCode resource requests to approved sources before implementation.
+resource_types:
+  stock_photography:
+    priority: [pexels, unsplash, pixabay]
+  product_imagery:
+    priority: [client_assets, approved_demo_imagery, generated_demo_imagery, pexels]
+  illustrations:
+    priority: [client_assets, agency_approved_illustrations]
+  icons:
+    priority: [iconoir, lucide, tabler]
+  brand_logos:
+    priority: [official_brand_assets]
+  fonts:
+    priority: [client_licensed_fonts, google_fonts, system_fonts]
+  motion:
+    priority: [agency_motion, rive, lottiefiles]
+  flutter_ui_reference:
+    priority: [agency_registry, approved_github]
+  flutter_package:
+    priority: [agency_flutter_ui, approved_internal_wrapper, pubdev]
+  design_reference:
+    priority: [client_references, agency_registry, approved_public_reference]
+  ux_journey_reference:
+    priority: [agency_journeys, existing_agency_apps, approved_observation]
+  demo_data:
+    priority: [agency_generated_fixtures]
+  maps_location:
+    priority: [approved_map_provider]
+  video:
+    priority: [client_assets, pexels]
+rules:
+  - Search only when the client or agency-approved resource is insufficient.
+  - Never commit provider API keys or other secrets.
+  - Record provenance for every externally sourced resource used in a prototype.
+  - External UI/code references must be normalized before implementation.
+  - Brand logos must come from official brand sources.
+  - Demo data must not contain sensitive or copied customer data.

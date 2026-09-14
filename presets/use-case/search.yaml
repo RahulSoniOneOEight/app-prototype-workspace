@@ -1,0 +1,13 @@
+id: preset.use_case.search
+kind: use_case
+recommended:
+  patterns:
+  - shared.search
+  - shared.plp
+  journeys:
+  - core.browse_to_product
+  experience_patterns:
+  - search-first
+metadata:
+  maturity: seed
+  client_agnostic: true

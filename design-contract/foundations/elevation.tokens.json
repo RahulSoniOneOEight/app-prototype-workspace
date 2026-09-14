@@ -1,0 +1,10 @@
+{
+  "elevation": {
+    "none":{"level":0,"blur":0,"y":0,"opacity":0},
+    "subtle":{"level":1,"blur":6,"y":2,"opacity":0.08},
+    "card":{"level":2,"blur":12,"y":4,"opacity":0.10},
+    "overlay":{"level":3,"blur":24,"y":8,"opacity":0.14},
+    "modal":{"level":4,"blur":32,"y":12,"opacity":0.18}
+  },
+  "semantic":{"surface":"none","interactive":"subtle","card":"card","sheet":"overlay","dialog":"modal"}
+}

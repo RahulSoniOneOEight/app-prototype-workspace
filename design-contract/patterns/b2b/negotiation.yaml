@@ -1,0 +1,10 @@
+id: b2b.negotiation
+business_models: [b2b, marketplace]
+industries: [general]
+use_cases: [quote_negotiation]
+best_for: [counter_offer, term_revision]
+avoid_for: [non_negotiable_price]
+required_components: [core.input, core.button]
+optional_components: [commerce.price_display, core.badge]
+responsive: {mobile: conversation_with_summary, tablet: split, desktop: split}
+supported_slots: [current_quote, revision_history, messages, counter_price, counter_terms, attachments, accept, reject]

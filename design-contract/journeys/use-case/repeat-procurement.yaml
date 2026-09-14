@@ -1,0 +1,12 @@
+id: use-case.repeat-procurement
+kind: journey
+steps:
+- id: order_history
+- id: select_previous_order
+- id: adjust_quantities
+- id: confirm_price_availability
+- id: place_order
+metadata:
+  maturity: seed
+  source_reference: b2b+b2c prototype
+  client_agnostic: true

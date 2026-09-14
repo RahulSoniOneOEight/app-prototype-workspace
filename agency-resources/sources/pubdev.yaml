@@ -1,0 +1,17 @@
+id: pubdev
+resource_types: [flutter_package]
+search:
+  method: catalog
+  supports: [query, package_name, topic]
+evaluation:
+  check: [license, maintenance, sdk_compatibility, architecture_fit, duplication_risk, dependency_weight]
+usage:
+  prototype:
+    preferred: approved_dependency
+  production:
+    preferred: approved_dependency
+provenance:
+  store: [provider, asset_id, source_url, license, query, package_version, selected_at, usage]
+notes:
+  - Search only after agency_flutter_ui and approved internal wrappers.
+  - Reject packages that duplicate an existing approved agency capability without a clear benefit.

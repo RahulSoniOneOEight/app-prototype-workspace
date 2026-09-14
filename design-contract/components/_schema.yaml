@@ -1,0 +1,24 @@
+version: 1
+required_for_decision_components:
+  - id
+  - name
+  - category
+  - purpose
+  - status
+  - business_models
+  - industries
+  - use_cases
+  - variants
+  - states
+  - responsive
+  - compatible_patterns
+  - requires
+  - avoid_when
+  - accessibility
+  - source_refs
+  - tags
+allowed_status: [experimental, approved, deprecated]
+notes:
+  - "Deterministic foundation tokens do not use this rich metadata schema."
+  - "Use industries: [general] when no specialization exists."
+  - "OpenCode should query registry metadata before loading this detailed contract."

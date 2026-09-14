@@ -1,0 +1,37 @@
+id: warm-commerce-coral-commerce
+name: Coral Commerce
+parent_preset: warm-commerce
+option: B
+source_colors:
+- '#FFB6B9'
+- '#FAE3D9'
+- '#BBDED6'
+- '#61C0BF'
+metadata:
+  warmth: warm
+  saturation: medium
+  contrast: medium
+best_for:
+- D2C
+- gifting
+- lifestyle commerce
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#61C0BF'
+  brand_secondary: '#BBDED6'
+  background: '#FFB6B9'
+  surface: '#FFFFFF'
+  surface_alt: '#FAE3D9'
+  text_primary: '#61C0BF'
+  text_secondary: '#BBDED6'
+  border: '#FAE3D9'
+  accent: '#BBDED6'
+  cta: '#61C0BF'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

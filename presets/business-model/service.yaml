@@ -1,0 +1,15 @@
+id: preset.business.service
+kind: business_model
+recommended:
+  priorities:
+    availability: high
+    trust: high
+    booking_speed: high
+  patterns:
+  - shared.service_listing
+  - shared.slot_picker
+  journeys:
+  - service.discover_to_booking
+metadata:
+  maturity: seed
+  client_agnostic: true

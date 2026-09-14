@@ -1,0 +1,22 @@
+id: preset.industry.food-delivery-qsr
+kind: industry
+name: Food Delivery / QSR
+industry_characteristics:
+- location
+- menu_speed
+- customization
+- delivery_eta
+recommended:
+  patterns:
+  - shared.search
+  - shared.quick_order
+  - shared.delivery_status
+  experience_patterns:
+  - transaction-first
+  - search-first
+resource_guidance:
+  imagery: fit_to_industry_and_client_brand
+  icons: semantic_and_consistent
+metadata:
+  maturity: seed
+  client_agnostic: true

@@ -1,0 +1,16 @@
+id: preset.use_case.bulk-procurement
+kind: use_case
+recommended:
+  patterns:
+  - b2b.bulk_product
+  - b2b.boq_builder
+  - b2b.rfq
+  journeys:
+  - b2b.boq_to_rfq
+  - b2b.quote_to_order
+  experience_patterns:
+  - trade-first
+  - rfq-first
+metadata:
+  maturity: seed
+  client_agnostic: true

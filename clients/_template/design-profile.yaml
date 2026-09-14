@@ -1,0 +1,18 @@
+client: CLIENT_NAME
+business_model: b2c
+industry: general
+target_users: []
+brand_personality: [clear, modern]
+platforms: [mobile]
+active_presets:
+  business_model: preset.business.b2c
+  industry: null
+  use_cases: []
+accessibility:
+  target: WCAG_AA
+  text_scaling: support
+density: standard
+imagery: clean-commerce
+navigation: bottom_bar
+notes:
+  - Replace placeholder values only in the client layer; do not edit shared foundations for client branding.

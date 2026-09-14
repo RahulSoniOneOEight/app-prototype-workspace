@@ -1,0 +1,18 @@
+id: commerce.rating
+name: Rating
+category: commerce.social_proof
+purpose: Show rating score and optional review count.
+status: approved
+business_models: [b2c, marketplace]
+industries: [general]
+use_cases: [product_listing, product_detail, seller]
+variants: [stars, compact, score]
+states: [default, loading, no_reviews]
+density: [compact, standard]
+responsive: {mobile: supported, tablet: supported, desktop: supported}
+compatible_patterns: [shared.home, shared.plp, shared.pdp]
+requires: []
+avoid_when: [reviews_not_supported]
+accessibility: {spoken_rating_summary: true, icons_not_only_signal: true}
+source_refs: [momentous-developments/flutter-showcase-app, robertodevs/flutter_ecommerce_template]
+tags: [rating, reviews, commerce]

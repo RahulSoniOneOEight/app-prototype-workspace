@@ -1,0 +1,13 @@
+id: b2b.trade-home
+kind: pattern
+slots:
+- account_context
+- search
+- quick_order
+- rfq
+- credit
+- repeat_order
+metadata:
+  maturity: seed
+  source_reference: b2b+b2c prototype
+  client_agnostic: true

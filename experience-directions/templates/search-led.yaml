@@ -1,0 +1,32 @@
+id: search-led
+name: Search-led efficiency experience
+strategy: search_led
+structure:
+  entry: home
+  navigation: search_forward
+journeys:
+  primary:
+    - core.browse_to_product
+patterns:
+  home: shared.home
+  search: shared.search
+  plp: shared.plp
+  pdp: shared.pdp
+density: compact
+merchandising:
+  emphasis:
+    - recent_searches
+    - popular_queries
+    - comparison_shortcuts
+interactions:
+  search_prominence: primary
+  browse_prominence: secondary
+visual_style:
+  hierarchy: functional
+  imagery: product_first
+resources:
+  imagery_style: functional
+  icon_family: iconoir
+tradeoffs:
+  - Provides less inspiration than a discovery-led home.
+rationale: Best for users who know what they need and value speed to product.

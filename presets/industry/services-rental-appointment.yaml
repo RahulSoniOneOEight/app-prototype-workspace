@@ -1,0 +1,22 @@
+id: preset.industry.services-rental-appointment
+kind: industry
+name: Services / Rental / Appointment
+industry_characteristics:
+- availability
+- slot_selection
+- provider_trust
+- reschedule
+recommended:
+  patterns:
+  - shared.service_listing
+  - shared.slot_picker
+  - shared.availability
+  experience_patterns:
+  - task-first
+  - guided-selling
+resource_guidance:
+  imagery: fit_to_industry_and_client_brand
+  icons: semantic_and_consistent
+metadata:
+  maturity: seed
+  client_agnostic: true

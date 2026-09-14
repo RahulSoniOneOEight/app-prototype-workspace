@@ -1,0 +1,9 @@
+id: b2c.consumer_checkout
+name: Consumer Checkout
+business_models: [b2c]
+industries: [general]
+use_cases: [checkout, guest_checkout]
+requires: [commerce.checkout]
+patterns: [b2c.consumer_checkout]
+steps: [contact, delivery_address, fulfillment, payment, review, place_order, confirmation]
+optional: [account_sign_in, promotion_code]

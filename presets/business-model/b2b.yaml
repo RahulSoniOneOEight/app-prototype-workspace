@@ -1,0 +1,25 @@
+id: preset.business.b2b
+kind: business_model
+recommended:
+  priorities:
+    search: high
+    account_context: high
+    pricing_visibility: high
+    procurement_speed: high
+  patterns:
+  - b2b.trade_home
+  - shared.search
+  - shared.plp
+  - b2b.bulk_product
+  - b2b.rfq
+  - b2b.quote_comparison
+  - b2b.credit
+  journeys:
+  - b2b.browse_to_bulk_order
+  - b2b.boq_to_rfq
+  - b2b.rfq_to_quotes
+  - b2b.quote_to_order
+  - b2b.repeat_procurement
+metadata:
+  maturity: seed
+  client_agnostic: true

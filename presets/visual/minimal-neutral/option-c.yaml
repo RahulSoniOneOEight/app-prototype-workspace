@@ -1,0 +1,37 @@
+id: minimal-neutral-cool-architectural
+name: Cool Architectural
+parent_preset: minimal-neutral
+option: C
+source_colors:
+- '#F5F7FA'
+- '#DDE6ED'
+- '#9DB2BF'
+- '#27374D'
+metadata:
+  warmth: cool
+  saturation: low
+  contrast: medium
+best_for:
+- architecture
+- property
+- enterprise
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#27374D'
+  brand_secondary: '#9DB2BF'
+  background: '#F5F7FA'
+  surface: '#FFFFFF'
+  surface_alt: '#DDE6ED'
+  text_primary: '#27374D'
+  text_secondary: '#9DB2BF'
+  border: '#DDE6ED'
+  accent: '#9DB2BF'
+  cta: '#27374D'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

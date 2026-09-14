@@ -1,0 +1,12 @@
+id: b2b.credit
+kind: pattern
+slots:
+- limit
+- available
+- used
+- due
+- eligibility
+metadata:
+  maturity: seed
+  source_reference: b2b+b2c prototype
+  client_agnostic: true

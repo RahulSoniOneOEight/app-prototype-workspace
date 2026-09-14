@@ -1,0 +1,11 @@
+id: shared.pdp
+business_models: [b2c, b2b, marketplace]
+industries: [general]
+use_cases: [product_detail, purchase_decision, quote_decision]
+best_for: [product_evaluation]
+avoid_for: [service_only_without_catalogue]
+required_components: [commerce.price_display]
+optional_components: [commerce.rating, core.badge, commerce.quantity_stepper, commerce.product_card]
+responsive: {mobile: stacked, tablet: split, desktop: split_with_sticky_summary}
+supported_slots: [gallery, badges, title, rating, price, variants, offers, delivery, primary_action, description, specifications, reviews, recommendations]
+variants: [standard, premium, marketplace, specification_heavy, b2b]

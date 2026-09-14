@@ -1,0 +1,16 @@
+id: lottiefiles
+resource_types: [motion]
+search:
+  method: catalog
+  supports: [query, category]
+evaluation:
+  check: [license, visual_consistency, performance, platform_support, editability]
+usage:
+  prototype:
+    preferred: remote_or_downloaded_asset
+  production:
+    preferred: reviewed_local_asset
+provenance:
+  store: [provider, asset_id, source_url, license, query, creator, selected_at, usage]
+notes:
+  - Prefer subtle motion that supports task feedback rather than decorative animation.

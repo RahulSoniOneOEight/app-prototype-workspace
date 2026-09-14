@@ -1,0 +1,22 @@
+id: preset.industry.health-pharmacy-wellness
+kind: industry
+name: Health / Pharmacy / Wellness
+industry_characteristics:
+- trust
+- compliance
+- reorder
+- content_guidance
+recommended:
+  patterns:
+  - shared.search
+  - shared.pdp
+  - b2c.related_products
+  experience_patterns:
+  - search-first
+  - reorder-first
+resource_guidance:
+  imagery: fit_to_industry_and_client_brand
+  icons: semantic_and_consistent
+metadata:
+  maturity: seed
+  client_agnostic: true

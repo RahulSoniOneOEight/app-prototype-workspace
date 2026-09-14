@@ -1,0 +1,5 @@
+id: pubdev
+type: flutter_package_provider
+supports: [flutter_packages]
+rules: [record_package, version, license, maintenance_status, platform_support]
+metadata: {maturity: approved-source-definition}

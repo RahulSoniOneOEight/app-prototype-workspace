@@ -1,0 +1,7 @@
+rules: []
+# Example:
+# - id: custom-approval-rule
+#   status: client_only
+#   description: Orders above an agreed threshold require an additional client-specific approval.
+#   promote_when_reused: true
+#   evidence_required_for_promotion: 2_similar_clients

@@ -1,0 +1,37 @@
+id: cool-professional-slate-teal
+name: Slate Teal
+parent_preset: cool-professional
+option: B
+source_colors:
+- '#EEEEEE'
+- '#00ADB5'
+- '#393E46'
+- '#222831'
+metadata:
+  warmth: cool
+  saturation: medium
+  contrast: high
+best_for:
+- operations
+- analytics
+- technical B2B
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#222831'
+  brand_secondary: '#393E46'
+  background: '#EEEEEE'
+  surface: '#FFFFFF'
+  surface_alt: '#00ADB5'
+  text_primary: '#222831'
+  text_secondary: '#393E46'
+  border: '#00ADB5'
+  accent: '#393E46'
+  cta: '#222831'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

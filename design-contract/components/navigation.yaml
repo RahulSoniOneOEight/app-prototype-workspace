@@ -1,0 +1,18 @@
+id: core.navigation
+name: Navigation
+category: core.navigation
+purpose: Provide primary app navigation appropriate to viewport and information architecture.
+status: approved
+business_models: [b2c, b2b, marketplace, subscription]
+industries: [general]
+use_cases: [primary_navigation, mode_switching]
+variants: [bottom_bar, app_bar, rail, drawer, tabs]
+states: [default, selected, disabled]
+density: [compact, standard]
+responsive: {mobile: [bottom_bar, app_bar], tablet: [bottom_bar, rail], desktop: [rail, drawer, app_bar]}
+compatible_patterns: ['*']
+requires: [core.icon_button]
+avoid_when: [single_screen_flow]
+accessibility: {selected_state_announced: true, labels_preferred: true, logical_focus_order: true}
+source_refs: [momentous-developments/flutter-showcase-app]
+tags: [navigation, responsive, mode_switch]

@@ -1,0 +1,9 @@
+id: industry.grocery_substitution_delivery
+name: Grocery Substitution and Delivery
+business_models: [b2c]
+industries: [grocery]
+use_cases: [repeat_purchase, substitutions, delivery_slot]
+requires: [commerce.cart, commerce.checkout, commerce.order]
+patterns: [b2c.discovery_home, shared.cart, b2c.consumer_checkout]
+steps: [build_basket, review_availability, set_substitution_preference, choose_delivery_slot, checkout, handle_substitution_updates, receive_order]
+optional: [saved_basket, reorder]

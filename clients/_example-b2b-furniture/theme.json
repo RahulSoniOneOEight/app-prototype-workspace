@@ -1,0 +1,10 @@
+{
+  "id":"theme.example-b2b-furniture",
+  "extends":"theme.premium",
+  "colors":{"brandPrimary":"#3F4A3C","brandSecondary":"#8B6F47"},
+  "typography":{"family":"system-ui"},
+  "radius":{"card":"radius.xl"},
+  "density":"standard",
+  "imagery":{"style":"editorial-interiors"},
+  "motion":{"personality":"soft"}
+}

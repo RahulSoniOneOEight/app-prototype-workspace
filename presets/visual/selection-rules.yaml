@@ -1,0 +1,10 @@
+hard_rules:
+- id: accessibility
+  rule: WCAG AA normal body text target 4.5:1; reject or adjust failing semantic combinations.
+- id: existing_brand
+  rule: Preserve core brand color when explicitly locked by client.
+- id: trade_first
+  rule: Boost legibility, dense-information compatibility, clear action hierarchy and restrained saturation.
+- id: mobile_commerce
+  rule: Require strong CTA contrast and non-color-only state communication.
+selection_output: [recommended, alternative, exploratory]

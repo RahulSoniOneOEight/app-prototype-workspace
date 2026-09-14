@@ -1,0 +1,13 @@
+base_direction: direction_a
+composition:
+  home:
+    from: direction_a
+  search:
+    from: direction_b
+  trade:
+    from: direction_c
+theme:
+  from: direction_a
+client_changes:
+  - Replace this example with the client-approved mix after prototype review.
+status: template

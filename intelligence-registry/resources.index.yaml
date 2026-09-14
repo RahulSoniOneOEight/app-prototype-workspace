@@ -1,0 +1,10 @@
+items:
+- id: pexels
+  path: resources/providers/pexels.yaml
+  tags: [resource, image]
+- id: iconoir
+  path: resources/providers/iconoir.yaml
+  tags: [resource, icon]
+- id: pubdev
+  path: resources/providers/pubdev.yaml
+  tags: [resource, flutter-package]

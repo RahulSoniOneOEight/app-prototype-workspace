@@ -1,0 +1,10 @@
+id: shared.quick-order
+kind: pattern
+slots:
+- search_or_sku_entry
+- quantity_entry
+- fast_add
+metadata:
+  maturity: seed
+  source_reference: b2b+b2c prototype
+  client_agnostic: true

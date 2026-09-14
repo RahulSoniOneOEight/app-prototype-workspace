@@ -1,0 +1,14 @@
+id: business-model.marketplace-purchase
+kind: journey
+steps:
+- id: search_or_category
+- id: pdp
+- id: seller_compare
+- id: cart
+- id: checkout
+- id: confirmation
+- id: split_tracking
+metadata:
+  maturity: seed
+  source_reference: b2b+b2c prototype
+  client_agnostic: true

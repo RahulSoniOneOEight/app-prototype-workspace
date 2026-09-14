@@ -1,0 +1,10 @@
+{
+  "$description":"Semantic color roles. Concrete client brand values belong in themes/client overrides, not here.",
+  "brand":{"primary":null,"secondary":null,"tertiary":null},
+  "surface":{"base":null,"subtle":null,"raised":null,"inverse":null},
+  "text":{"primary":null,"secondary":null,"disabled":null,"inverse":null},
+  "border":{"default":null,"strong":null},
+  "action":{"primary":null,"secondary":null,"destructive":null},
+  "state":{"success":null,"warning":null,"error":null,"info":null},
+  "commerce":{"discount":null,"new":null,"outOfStock":null,"rating":null,"priceEmphasis":null}
+}

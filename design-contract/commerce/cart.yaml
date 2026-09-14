@@ -1,0 +1,8 @@
+id: commerce.cart
+purpose: Shared pre-order basket concept for B2C, B2B and marketplace flows.
+fields: [items, subtotal, discounts, taxes, charges, delivery_options, total, currency, warnings]
+item_fields: [product, variant, quantity, unit_price, line_total, seller, fulfillment, eligibility]
+states: [active, recalculating, has_unavailable_items, has_price_changes, empty]
+rules:
+  - Surface price, availability and fulfillment changes before checkout.
+  - B2B carts may carry MOQ, pack/UOM and quote eligibility.

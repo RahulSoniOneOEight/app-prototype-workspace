@@ -1,0 +1,37 @@
+id: soft-contemporary-soft-blue
+name: Soft Blue
+parent_preset: soft-contemporary
+option: A
+source_colors:
+- '#EAF6F6'
+- '#C4DFDF'
+- '#D2E9E9'
+- '#2C3333'
+metadata:
+  warmth: cool
+  saturation: low
+  contrast: medium
+best_for:
+- lifestyle
+- consumer apps
+- home
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#2C3333'
+  brand_secondary: '#D2E9E9'
+  background: '#EAF6F6'
+  surface: '#FFFFFF'
+  surface_alt: '#C4DFDF'
+  text_primary: '#2C3333'
+  text_secondary: '#D2E9E9'
+  border: '#C4DFDF'
+  accent: '#D2E9E9'
+  cta: '#2C3333'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

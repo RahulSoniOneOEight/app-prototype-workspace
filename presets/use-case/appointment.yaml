@@ -1,0 +1,13 @@
+id: preset.use_case.appointment
+kind: use_case
+recommended:
+  patterns:
+  - shared.slot_picker
+  - shared.service_listing
+  journeys:
+  - service.discover_to_booking
+  experience_patterns:
+  - task-first
+metadata:
+  maturity: seed
+  client_agnostic: true

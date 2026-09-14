@@ -1,0 +1,12 @@
+id: b2b.quote-comparison
+kind: pattern
+slots:
+- seller
+- line_item_price
+- terms
+- delivery
+- award
+metadata:
+  maturity: seed
+  source_reference: b2b+b2c prototype
+  client_agnostic: true

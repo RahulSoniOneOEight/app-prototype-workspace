@@ -1,0 +1,18 @@
+id: commerce.cart_item
+name: CartItem
+category: commerce.cart
+purpose: Represent an item in cart, checkout summary or reorder context.
+status: approved
+business_models: [b2c, b2b, marketplace]
+industries: [general]
+use_cases: [cart, checkout, reorder]
+variants: [standard, compact, b2b, marketplace]
+states: [default, loading, unavailable, price_changed, quantity_error]
+density: [compact, standard]
+responsive: {mobile: supported, tablet: supported, desktop: supported}
+compatible_patterns: [shared.cart, shared.checkout, b2b.procurement_order]
+requires: [commerce.price_display, commerce.quantity_stepper]
+avoid_when: [non_orderable_item]
+accessibility: {quantity_controls_labeled: true, removal_confirmation_context: true}
+source_refs: [momentous-developments/flutter-showcase-app, bagisto/bagisto]
+tags: [cart, commerce, order]

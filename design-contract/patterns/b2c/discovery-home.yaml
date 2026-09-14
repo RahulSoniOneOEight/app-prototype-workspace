@@ -1,0 +1,12 @@
+id: b2c.discovery-home
+kind: pattern
+slots:
+- hero
+- categories
+- collections
+- promotions
+- recommendations
+metadata:
+  maturity: seed
+  source_reference: b2b+b2c prototype
+  client_agnostic: true

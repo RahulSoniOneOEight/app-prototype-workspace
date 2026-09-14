@@ -1,0 +1,24 @@
+version: 1
+purpose: Define materially different product experience alternatives for client prototype exploration.
+required:
+  - id
+  - name
+  - strategy
+  - structure
+  - journeys
+  - patterns
+  - density
+  - merchandising
+  - interactions
+  - visual_style
+optional:
+  - resources
+  - capabilities
+  - tradeoffs
+  - rationale
+rules:
+  - Directions must differ in product experience, not only theme or color.
+  - Every direction must define at least one primary journey.
+  - Pattern and journey values must reference approved registry IDs.
+  - Client directions may compose templates but remain client-specific until intentionally promoted.
+  - A direction should state what it optimizes for and the tradeoffs it accepts.

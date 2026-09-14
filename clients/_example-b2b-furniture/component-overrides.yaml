@@ -1,0 +1,7 @@
+overrides:
+  - component_id: commerce.product_card
+    variant: b2b
+    reason: Business buyers need MOQ, tier pricing and quote actions.
+  - component_id: commerce.price_display
+    variant: tiered
+    reason: Volume pricing is important to the buying decision.

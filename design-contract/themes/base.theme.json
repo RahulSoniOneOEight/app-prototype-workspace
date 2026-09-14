@@ -1,0 +1,12 @@
+{
+  "id":"theme.base",
+  "extends":null,
+  "mode":"light",
+  "density":"standard",
+  "colors":{"brandPrimary":"#2563EB","brandSecondary":"#475569","surfaceBase":"#FFFFFF","surfaceSubtle":"#F8FAFC","surfaceRaised":"#FFFFFF","surfaceInverse":"#0F172A","textPrimary":"#0F172A","textSecondary":"#475569","textDisabled":"#94A3B8","textInverse":"#FFFFFF","borderDefault":"#E2E8F0","borderStrong":"#CBD5E1","success":"#16A34A","warning":"#D97706","error":"#DC2626","info":"#0284C7","discount":"#DC2626","rating":"#F59E0B"},
+  "typography":{"family":"system-ui"},
+  "radius":{"card":"radius.lg","button":"radius.lg","input":"radius.lg"},
+  "elevation":{"card":"elevation.card"},
+  "motion":{"personality":"standard"},
+  "imagery":{"style":"clean-commerce"}
+}

@@ -1,0 +1,5 @@
+id: iconoir
+type: icon_library
+status: approved
+source: {provider: iconoir, license: MIT}
+approved_for: [prototype, production]

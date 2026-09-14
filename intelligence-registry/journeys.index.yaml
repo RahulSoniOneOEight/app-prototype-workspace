@@ -1,0 +1,26 @@
+items:
+- id: core.b2c-purchase
+  path: design-contract/journeys/core/b2c-purchase.yaml
+  tags:
+  - core
+  - b2c-purchase
+- id: business-model.marketplace-purchase
+  path: design-contract/journeys/business-model/marketplace-purchase.yaml
+  tags:
+  - business-model
+  - marketplace-purchase
+- id: business-model.b2b-bulk-order
+  path: design-contract/journeys/business-model/b2b-bulk-order.yaml
+  tags:
+  - business-model
+  - b2b-bulk-order
+- id: use-case.rfq-to-order
+  path: design-contract/journeys/use-case/rfq-to-order.yaml
+  tags:
+  - use-case
+  - rfq-to-order
+- id: use-case.repeat-procurement
+  path: design-contract/journeys/use-case/repeat-procurement.yaml
+  tags:
+  - use-case
+  - repeat-procurement

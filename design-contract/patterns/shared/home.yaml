@@ -1,0 +1,11 @@
+id: shared.home
+business_models: [b2c, b2b, marketplace]
+industries: [general]
+use_cases: [discovery, merchandising, repeat_purchase]
+best_for: [commerce_entry, personalized_discovery]
+avoid_for: [single_task_flow]
+required_components: [core.navigation]
+optional_components: [commerce.category_tile, commerce.product_card, commerce.promo_tile]
+responsive: {mobile: stacked, tablet: adaptive_grid, desktop: multi_column}
+supported_slots: [app_bar, search, hero, category_navigation, merchandising, product_collections, recommendations]
+variants: [standard, minimal, discovery_first, editorial, promotion_heavy, marketplace]

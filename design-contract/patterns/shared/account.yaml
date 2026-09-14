@@ -1,0 +1,11 @@
+id: shared.account
+business_models: [b2c, b2b, marketplace]
+industries: [general]
+use_cases: [profile, addresses, preferences, saved_items, account_management]
+best_for: [authenticated_self_service]
+avoid_for: [anonymous_only_flow]
+required_components: [core.navigation]
+optional_components: [core.card, core.button]
+responsive: {mobile: list_navigation, tablet: master_detail, desktop: side_navigation}
+supported_slots: [profile, addresses, orders, returns, saved_items, preferences, business_account]
+variants: [consumer, business, marketplace]

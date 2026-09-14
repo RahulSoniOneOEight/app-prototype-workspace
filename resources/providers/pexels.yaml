@@ -1,0 +1,6 @@
+id: pexels
+type: image_provider
+supports: [lifestyle_photography, interiors, people]
+avoid_for: [official_brand_logos, exact_product_packshots]
+rules: [record_query, record_asset_id, record_author, record_source_url]
+metadata: {maturity: approved-source-definition}

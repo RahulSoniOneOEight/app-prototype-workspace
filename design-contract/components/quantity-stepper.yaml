@@ -1,0 +1,18 @@
+id: commerce.quantity_stepper
+name: QuantityStepper
+category: commerce.quantity
+purpose: Change purchase quantity while enforcing min, max, step, MOQ and pack rules.
+status: approved
+business_models: [b2c, b2b, marketplace]
+industries: [general]
+use_cases: [cart, product_detail, bulk_purchase]
+variants: [standard, compact, b2b]
+states: [default, focused, disabled, loading, min_reached, max_reached, invalid]
+density: [compact, standard]
+responsive: {mobile: supported, tablet: supported, desktop: supported}
+compatible_patterns: [shared.pdp, shared.cart, b2b.bulk_product]
+requires: [core.icon_button]
+avoid_when: [fixed_single_quantity]
+accessibility: {increment_label_required: true, decrement_label_required: true, value_announced: true, min_target_px: 44}
+source_refs: [bagisto/bagisto]
+tags: [quantity, cart, moq, b2b]

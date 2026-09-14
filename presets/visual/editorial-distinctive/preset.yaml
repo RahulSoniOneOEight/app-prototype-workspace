@@ -1,0 +1,15 @@
+id: editorial-distinctive
+kind: visual_preset
+name: Editorial Distinctive
+description: Editorial Distinctive visual direction family.
+options:
+- editorial-distinctive-burgundy-editorial
+- editorial-distinctive-olive-modernist
+- editorial-distinctive-cobalt-studio
+three_option_semantics:
+  A: safest / broadly applicable
+  B: differentiated / contemporary
+  C: stronger / exploratory
+metadata:
+  maturity: seed
+  client_agnostic: true
