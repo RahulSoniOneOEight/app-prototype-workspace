@@ -1,0 +1,124 @@
+items:
+- id: preset.business.b2c
+  path: presets/business-model/b2c.yaml
+  tags: [business-model, b2c]
+- id: preset.business.b2b
+  path: presets/business-model/b2b.yaml
+  tags: [business-model, b2b]
+- id: preset.business.marketplace
+  path: presets/business-model/marketplace.yaml
+  tags: [business-model, marketplace]
+- id: preset.business.subscription
+  path: presets/business-model/subscription.yaml
+  tags: [business-model, subscription]
+- id: preset.business.rental
+  path: presets/business-model/rental.yaml
+  tags: [business-model, rental]
+- id: preset.business.service
+  path: presets/business-model/service.yaml
+  tags: [business-model, service]
+- id: preset.industry.fashion-apparel
+  path: presets/industry/fashion-apparel.yaml
+  tags: [industry, fashion-apparel]
+- id: preset.industry.beauty-personal-care
+  path: presets/industry/beauty-personal-care.yaml
+  tags: [industry, beauty-personal-care]
+- id: preset.industry.electronics-appliances
+  path: presets/industry/electronics-appliances.yaml
+  tags: [industry, electronics-appliances]
+- id: preset.industry.furniture-home-decor
+  path: presets/industry/furniture-home-decor.yaml
+  tags: [industry, furniture-home-decor]
+- id: preset.industry.grocery-fmcg
+  path: presets/industry/grocery-fmcg.yaml
+  tags: [industry, grocery-fmcg]
+- id: preset.industry.food-delivery-qsr
+  path: presets/industry/food-delivery-qsr.yaml
+  tags: [industry, food-delivery-qsr]
+- id: preset.industry.b2b-industrial-construction
+  path: presets/industry/b2b-industrial-construction.yaml
+  tags: [industry, b2b-industrial-construction]
+- id: preset.industry.marketplace-multiseller-retail
+  path: presets/industry/marketplace-multiseller-retail.yaml
+  tags: [industry, marketplace-multiseller-retail]
+- id: preset.industry.d2c-lifestyle
+  path: presets/industry/d2c-lifestyle.yaml
+  tags: [industry, d2c-lifestyle]
+- id: preset.industry.travel-hospitality
+  path: presets/industry/travel-hospitality.yaml
+  tags: [industry, travel-hospitality]
+- id: preset.industry.health-pharmacy-wellness
+  path: presets/industry/health-pharmacy-wellness.yaml
+  tags: [industry, health-pharmacy-wellness]
+- id: preset.industry.services-rental-appointment
+  path: presets/industry/services-rental-appointment.yaml
+  tags: [industry, services-rental-appointment]
+- id: preset.use_case.discovery
+  path: presets/use-case/discovery.yaml
+  tags: [use-case, discovery]
+- id: preset.use_case.comparison
+  path: presets/use-case/comparison.yaml
+  tags: [use-case, comparison]
+- id: preset.use_case.quick-order
+  path: presets/use-case/quick-order.yaml
+  tags: [use-case, quick-order]
+- id: preset.use_case.repeat-order
+  path: presets/use-case/repeat-order.yaml
+  tags: [use-case, repeat-order]
+- id: preset.use_case.bulk-procurement
+  path: presets/use-case/bulk-procurement.yaml
+  tags: [use-case, bulk-procurement]
+- id: preset.use_case.rfq
+  path: presets/use-case/rfq.yaml
+  tags: [use-case, rfq]
+- id: preset.use_case.subscription
+  path: presets/use-case/subscription.yaml
+  tags: [use-case, subscription]
+- id: preset.use_case.booking
+  path: presets/use-case/booking.yaml
+  tags: [use-case, booking]
+- id: preset.use_case.appointment
+  path: presets/use-case/appointment.yaml
+  tags: [use-case, appointment]
+- id: preset.use_case.recommendations
+  path: presets/use-case/recommendations.yaml
+  tags: [use-case, recommendations]
+- id: preset.use_case.search
+  path: presets/use-case/search.yaml
+  tags: [use-case, search]
+- id: minimal-neutral
+  path: presets/visual/minimal-neutral/preset.yaml
+  tags: [visual]
+- id: premium-neutral
+  path: presets/visual/premium-neutral/preset.yaml
+  tags: [visual]
+- id: soft-contemporary
+  path: presets/visual/soft-contemporary/preset.yaml
+  tags: [visual]
+- id: fresh-wellness
+  path: presets/visual/fresh-wellness/preset.yaml
+  tags: [visual]
+- id: natural-earthy
+  path: presets/visual/natural-earthy/preset.yaml
+  tags: [visual]
+- id: warm-commerce
+  path: presets/visual/warm-commerce/preset.yaml
+  tags: [visual]
+- id: cool-professional
+  path: presets/visual/cool-professional/preset.yaml
+  tags: [visual]
+- id: technology-modern
+  path: presets/visual/technology-modern/preset.yaml
+  tags: [visual]
+- id: premium-dark
+  path: presets/visual/premium-dark/preset.yaml
+  tags: [visual]
+- id: expressive
+  path: presets/visual/expressive/preset.yaml
+  tags: [visual]
+- id: energetic-commerce
+  path: presets/visual/energetic-commerce/preset.yaml
+  tags: [visual]
+- id: editorial-distinctive
+  path: presets/visual/editorial-distinctive/preset.yaml
+  tags: [visual]

@@ -1,0 +1,14 @@
+id: use-case.rfq-to-order
+kind: journey
+steps:
+- id: create_rfq
+- id: distribute_rfq
+- id: receive_quotes
+- id: compare_quotes
+- id: negotiate
+- id: accept_quote
+- id: create_order
+metadata:
+  maturity: seed
+  source_reference: b2b+b2c prototype
+  client_agnostic: true

@@ -1,0 +1,15 @@
+families:
+- minimal-neutral
+- premium-neutral
+- soft-contemporary
+- fresh-wellness
+- natural-earthy
+- warm-commerce
+- cool-professional
+- technology-modern
+- premium-dark
+- expressive
+- energetic-commerce
+- editorial-distinctive
+count: 12
+options_per_family: 3

@@ -1,0 +1,14 @@
+id: variant.price_display
+component: price-display
+variants:
+  standard: {}
+  discounted:
+    adds:
+    - mrp
+    - discount
+  tiered:
+    adds:
+    - price_breaks
+  negotiated:
+    adds:
+    - account_price

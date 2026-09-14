@@ -1,0 +1,37 @@
+id: warm-commerce-amber-retail
+name: Amber Retail
+parent_preset: warm-commerce
+option: A
+source_colors:
+- '#FFF4E0'
+- '#FFBF9B'
+- '#B46060'
+- '#4D4D4D'
+metadata:
+  warmth: warm
+  saturation: medium
+  contrast: high
+best_for:
+- retail
+- food
+- marketplace
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#4D4D4D'
+  brand_secondary: '#B46060'
+  background: '#FFF4E0'
+  surface: '#FFFFFF'
+  surface_alt: '#FFBF9B'
+  text_primary: '#4D4D4D'
+  text_secondary: '#B46060'
+  border: '#FFBF9B'
+  accent: '#B46060'
+  cta: '#4D4D4D'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

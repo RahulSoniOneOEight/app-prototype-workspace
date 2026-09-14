@@ -1,0 +1,37 @@
+id: premium-neutral-contemporary-luxury
+name: Contemporary Luxury
+parent_preset: premium-neutral
+option: B
+source_colors:
+- '#FAF3F0'
+- '#D4E2D4'
+- '#FFCACC'
+- '#DBC4F0'
+metadata:
+  warmth: neutral
+  saturation: low
+  contrast: medium
+best_for:
+- beauty
+- fashion
+- lifestyle
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#DBC4F0'
+  brand_secondary: '#FFCACC'
+  background: '#FAF3F0'
+  surface: '#FFFFFF'
+  surface_alt: '#D4E2D4'
+  text_primary: '#DBC4F0'
+  text_secondary: '#FFCACC'
+  border: '#D4E2D4'
+  accent: '#FFCACC'
+  cta: '#DBC4F0'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

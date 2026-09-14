@@ -1,0 +1,61 @@
+items:
+- id: shared.marketplace-pdp
+  path: design-contract/patterns/shared/marketplace-pdp.yaml
+  tags:
+  - shared
+  - marketplace-pdp
+- id: shared.seller-comparison
+  path: design-contract/patterns/shared/seller-comparison.yaml
+  tags:
+  - shared
+  - seller-comparison
+- id: shared.multi-seller-cart
+  path: design-contract/patterns/shared/multi-seller-cart.yaml
+  tags:
+  - shared
+  - multi-seller-cart
+- id: shared.quick-order
+  path: design-contract/patterns/shared/quick-order.yaml
+  tags:
+  - shared
+  - quick-order
+- id: shared.repeat-order
+  path: design-contract/patterns/shared/repeat-order.yaml
+  tags:
+  - shared
+  - repeat-order
+- id: b2c.discovery-home
+  path: design-contract/patterns/b2c/discovery-home.yaml
+  tags:
+  - b2c
+  - discovery-home
+- id: b2c.related-products
+  path: design-contract/patterns/b2c/related-products.yaml
+  tags:
+  - b2c
+  - related-products
+- id: b2b.trade-home
+  path: design-contract/patterns/b2b/trade-home.yaml
+  tags:
+  - b2b
+  - trade-home
+- id: b2b.bulk-product
+  path: design-contract/patterns/b2b/bulk-product.yaml
+  tags:
+  - b2b
+  - bulk-product
+- id: b2b.rfq
+  path: design-contract/patterns/b2b/rfq.yaml
+  tags:
+  - b2b
+  - rfq
+- id: b2b.quote-comparison
+  path: design-contract/patterns/b2b/quote-comparison.yaml
+  tags:
+  - b2b
+  - quote-comparison
+- id: b2b.credit
+  path: design-contract/patterns/b2b/credit.yaml
+  tags:
+  - b2b
+  - credit

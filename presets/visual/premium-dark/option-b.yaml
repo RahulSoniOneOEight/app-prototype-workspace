@@ -1,0 +1,37 @@
+id: premium-dark-midnight-luxury
+name: Midnight Luxury
+parent_preset: premium-dark
+option: B
+source_colors:
+- '#EEEEEE'
+- '#D8C4B6'
+- '#4F709C'
+- '#213555'
+metadata:
+  warmth: cool
+  saturation: low
+  contrast: high
+best_for:
+- premium technology
+- automotive
+- finance
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#213555'
+  brand_secondary: '#4F709C'
+  background: '#EEEEEE'
+  surface: '#FFFFFF'
+  surface_alt: '#D8C4B6'
+  text_primary: '#213555'
+  text_secondary: '#4F709C'
+  border: '#D8C4B6'
+  accent: '#4F709C'
+  cta: '#213555'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

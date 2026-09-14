@@ -1,11 +1,12 @@
-id: b2c.discovery_home
-business_models: [b2c]
-industries: [general]
-use_cases: [discovery, personalized_merchandising]
-best_for: [consumer_commerce, repeat_visits]
-avoid_for: [transaction_only_app]
-required_components: [commerce.category_tile, commerce.product_card]
-optional_components: [commerce.promo_tile]
-responsive: {mobile: long_scroll, tablet: adaptive_grid, desktop: multi_column}
-supported_slots: [hero, categories, curated_collections, deals, recently_viewed, recommendations]
-extends: shared.home
+id: b2c.discovery-home
+kind: pattern
+slots:
+- hero
+- categories
+- collections
+- promotions
+- recommendations
+metadata:
+  maturity: seed
+  source_reference: b2b+b2c prototype
+  client_agnostic: true

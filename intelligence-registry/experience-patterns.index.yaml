@@ -1,0 +1,21 @@
+items:
+- id: discovery-first
+  path: experience-patterns/discovery-first.yaml
+  tags:
+  - experience-pattern
+- id: search-first
+  path: experience-patterns/search-first.yaml
+  tags:
+  - experience-pattern
+- id: trade-first
+  path: experience-patterns/trade-first.yaml
+  tags:
+  - experience-pattern
+- id: rfq-first
+  path: experience-patterns/rfq-first.yaml
+  tags:
+  - experience-pattern
+- id: reorder-first
+  path: experience-patterns/reorder-first.yaml
+  tags:
+  - experience-pattern

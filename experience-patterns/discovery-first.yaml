@@ -1,0 +1,17 @@
+id: discovery-first
+kind: experience_pattern
+objective:
+- browse_inspiration
+- merchandising
+- cross_sell
+primary_entry_points:
+- home
+- category
+recommended_patterns:
+- b2c.discovery-home
+- b2c.related-products
+de_emphasize:
+- dense_trade_controls
+metadata:
+  maturity: seed
+  client_agnostic: true

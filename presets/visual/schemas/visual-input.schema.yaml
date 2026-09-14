@@ -1,0 +1,15 @@
+type: object
+required:
+- project
+- experience
+- brand
+- audience
+- interface
+- constraints
+properties:
+  project: {type: object}
+  experience: {type: object}
+  brand: {type: object}
+  audience: {type: object}
+  interface: {type: object}
+  constraints: {type: object}

@@ -1,0 +1,22 @@
+id: preset.industry.furniture-home-decor
+kind: industry
+name: Furniture & Home Decor
+industry_characteristics:
+- imagery
+- dimensions
+- delivery_installation
+- room_context
+recommended:
+  patterns:
+  - b2c.discovery_home
+  - shared.pdp
+  - shared.delivery_availability
+  experience_patterns:
+  - discovery-first
+  - editorial-commerce
+resource_guidance:
+  imagery: fit_to_industry_and_client_brand
+  icons: semantic_and_consistent
+metadata:
+  maturity: seed
+  client_agnostic: true

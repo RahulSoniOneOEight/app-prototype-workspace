@@ -1,0 +1,15 @@
+id: technology-modern
+kind: visual_preset
+name: Technology Modern
+description: Technology Modern visual direction family.
+options:
+- technology-modern-soft-tech
+- technology-modern-digital-indigo
+- technology-modern-electric-enterprise
+three_option_semantics:
+  A: safest / broadly applicable
+  B: differentiated / contemporary
+  C: stronger / exploratory
+metadata:
+  maturity: seed
+  client_agnostic: true

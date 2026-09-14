@@ -1,0 +1,7 @@
+id: variant.pdp
+variants:
+- standard
+- marketplace
+- spec-heavy
+- bulk
+- b2b

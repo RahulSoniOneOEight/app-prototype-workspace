@@ -1,0 +1,25 @@
+id: variant.product_card
+component: product-card
+variants:
+  standard:
+    best_for:
+    - b2c
+  compact:
+    best_for:
+    - dense_plp
+    - b2b
+  marketplace:
+    adds:
+    - seller
+    - delivery
+    - offer_count
+  b2b:
+    adds:
+    - moq
+    - tier_price
+    - uom
+    - stock
+  bulk:
+    adds:
+    - quantity_entry
+    - pack_size

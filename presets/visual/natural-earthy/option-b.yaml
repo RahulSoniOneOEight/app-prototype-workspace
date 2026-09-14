@@ -1,0 +1,37 @@
+id: natural-earthy-organic-sage
+name: Organic Sage
+parent_preset: natural-earthy
+option: B
+source_colors:
+- '#FEFAE0'
+- '#E9EDC9'
+- '#CCD5AE'
+- '#606C38'
+metadata:
+  warmth: warm
+  saturation: low
+  contrast: medium
+best_for:
+- organic goods
+- gardening
+- eco brands
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#606C38'
+  brand_secondary: '#CCD5AE'
+  background: '#FEFAE0'
+  surface: '#FFFFFF'
+  surface_alt: '#E9EDC9'
+  text_primary: '#606C38'
+  text_secondary: '#CCD5AE'
+  border: '#E9EDC9'
+  accent: '#CCD5AE'
+  cta: '#606C38'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

@@ -1,0 +1,37 @@
+id: premium-dark-charcoal-copper
+name: Charcoal Copper
+parent_preset: premium-dark
+option: C
+source_colors:
+- '#F7F1E5'
+- '#E7B10A'
+- '#898121'
+- '#4C4B16'
+metadata:
+  warmth: warm
+  saturation: medium
+  contrast: high
+best_for:
+- premium retail
+- heritage
+- food
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#4C4B16'
+  brand_secondary: '#898121'
+  background: '#F7F1E5'
+  surface: '#FFFFFF'
+  surface_alt: '#E7B10A'
+  text_primary: '#4C4B16'
+  text_secondary: '#898121'
+  border: '#E7B10A'
+  accent: '#898121'
+  cta: '#4C4B16'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

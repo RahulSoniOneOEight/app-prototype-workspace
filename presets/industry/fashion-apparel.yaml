@@ -1,0 +1,23 @@
+id: preset.industry.fashion-apparel
+kind: industry
+name: Fashion & Apparel
+industry_characteristics:
+- variant_selection
+- size_fit
+- visual_merchandising
+- wishlist
+recommended:
+  patterns:
+  - b2c.discovery_home
+  - shared.plp
+  - shared.pdp
+  - b2c.related_products
+  experience_patterns:
+  - discovery-first
+  - editorial-commerce
+resource_guidance:
+  imagery: fit_to_industry_and_client_brand
+  icons: semantic_and_consistent
+metadata:
+  maturity: seed
+  client_agnostic: true

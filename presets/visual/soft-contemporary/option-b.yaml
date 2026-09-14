@@ -1,0 +1,37 @@
+id: soft-contemporary-blush-modern
+name: Blush Modern
+parent_preset: soft-contemporary
+option: B
+source_colors:
+- '#FFF5E4'
+- '#FFE3E1'
+- '#FFD1D1'
+- '#FF9494'
+metadata:
+  warmth: warm
+  saturation: low
+  contrast: medium
+best_for:
+- beauty
+- gifting
+- D2C
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#FF9494'
+  brand_secondary: '#FFD1D1'
+  background: '#FFF5E4'
+  surface: '#FFFFFF'
+  surface_alt: '#FFE3E1'
+  text_primary: '#FF9494'
+  text_secondary: '#FFD1D1'
+  border: '#FFE3E1'
+  accent: '#FFD1D1'
+  cta: '#FF9494'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

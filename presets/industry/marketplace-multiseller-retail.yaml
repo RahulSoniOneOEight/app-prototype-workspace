@@ -1,0 +1,22 @@
+id: preset.industry.marketplace-multiseller-retail
+kind: industry
+name: Marketplace / Multi-seller Retail
+industry_characteristics:
+- seller_identity
+- offer_comparison
+- split_delivery
+- trust
+recommended:
+  patterns:
+  - shared.marketplace_pdp
+  - shared.seller_comparison
+  - shared.multi_seller_cart
+  experience_patterns:
+  - search-first
+  - discovery-first
+resource_guidance:
+  imagery: fit_to_industry_and_client_brand
+  icons: semantic_and_consistent
+metadata:
+  maturity: seed
+  client_agnostic: true

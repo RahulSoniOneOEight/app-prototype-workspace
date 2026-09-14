@@ -1,0 +1,16 @@
+id: reorder-first
+kind: experience_pattern
+objective:
+- repeat_purchase
+- speed
+primary_entry_points:
+- order_history
+- saved_lists
+recommended_patterns:
+- shared.repeat-order
+- shared.quick-order
+de_emphasize:
+- deep_discovery
+metadata:
+  maturity: seed
+  client_agnostic: true

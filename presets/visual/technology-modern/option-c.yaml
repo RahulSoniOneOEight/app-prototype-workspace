@@ -1,0 +1,37 @@
+id: technology-modern-electric-enterprise
+name: Electric Enterprise
+parent_preset: technology-modern
+option: C
+source_colors:
+- '#E8F9FD'
+- '#79DAE8'
+- '#0AA1DD'
+- '#2155CD'
+metadata:
+  warmth: cool
+  saturation: high
+  contrast: high
+best_for:
+- cloud
+- automation
+- enterprise software
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#2155CD'
+  brand_secondary: '#0AA1DD'
+  background: '#E8F9FD'
+  surface: '#FFFFFF'
+  surface_alt: '#79DAE8'
+  text_primary: '#2155CD'
+  text_secondary: '#0AA1DD'
+  border: '#79DAE8'
+  accent: '#0AA1DD'
+  cta: '#2155CD'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

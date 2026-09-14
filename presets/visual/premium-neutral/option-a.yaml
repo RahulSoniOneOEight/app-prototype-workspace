@@ -1,0 +1,38 @@
+id: premium-neutral-quiet-luxury
+name: Quiet Luxury
+parent_preset: premium-neutral
+option: A
+source_colors:
+- '#F8EDE3'
+- '#DFD3C3'
+- '#D0B8A8'
+- '#85586F'
+metadata:
+  warmth: warm
+  saturation: low
+  contrast: medium
+best_for:
+- furniture
+- interiors
+- jewellery
+- premium retail
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#85586F'
+  brand_secondary: '#D0B8A8'
+  background: '#F8EDE3'
+  surface: '#FFFFFF'
+  surface_alt: '#DFD3C3'
+  text_primary: '#85586F'
+  text_secondary: '#D0B8A8'
+  border: '#DFD3C3'
+  accent: '#D0B8A8'
+  cta: '#85586F'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

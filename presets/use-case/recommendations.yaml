@@ -1,0 +1,13 @@
+id: preset.use_case.recommendations
+kind: use_case
+recommended:
+  patterns:
+  - b2c.related_products
+  - b2c.discovery_home
+  journeys:
+  - b2c.discovery_to_purchase
+  experience_patterns:
+  - discovery-first
+metadata:
+  maturity: seed
+  client_agnostic: true

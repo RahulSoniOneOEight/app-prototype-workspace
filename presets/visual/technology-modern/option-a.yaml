@@ -1,0 +1,37 @@
+id: technology-modern-soft-tech
+name: Soft Tech
+parent_preset: technology-modern
+option: A
+source_colors:
+- '#EEF2FF'
+- '#C7D2FE'
+- '#818CF8'
+- '#312E81'
+metadata:
+  warmth: cool
+  saturation: medium
+  contrast: high
+best_for:
+- AI SaaS
+- productivity
+- developer tools
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#312E81'
+  brand_secondary: '#818CF8'
+  background: '#EEF2FF'
+  surface: '#FFFFFF'
+  surface_alt: '#C7D2FE'
+  text_primary: '#312E81'
+  text_secondary: '#818CF8'
+  border: '#C7D2FE'
+  accent: '#818CF8'
+  cta: '#312E81'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

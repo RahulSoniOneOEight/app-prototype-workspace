@@ -1,0 +1,10 @@
+id: shared.repeat-order
+kind: pattern
+slots:
+- order_history
+- reorder_action
+- editable_quantities
+metadata:
+  maturity: seed
+  source_reference: b2b+b2c prototype
+  client_agnostic: true

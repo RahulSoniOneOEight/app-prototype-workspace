@@ -1,0 +1,15 @@
+id: cool-professional
+kind: visual_preset
+name: Cool Professional
+description: Cool Professional visual direction family.
+options:
+- cool-professional-trust-blue
+- cool-professional-slate-teal
+- cool-professional-clear-corporate
+three_option_semantics:
+  A: safest / broadly applicable
+  B: differentiated / contemporary
+  C: stronger / exploratory
+metadata:
+  maturity: seed
+  client_agnostic: true

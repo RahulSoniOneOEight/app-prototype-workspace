@@ -1,0 +1,13 @@
+id: shared.seller-comparison
+kind: pattern
+slots:
+- seller
+- price
+- rating
+- delivery
+- stock
+- terms
+metadata:
+  maturity: seed
+  source_reference: b2b+b2c prototype
+  client_agnostic: true

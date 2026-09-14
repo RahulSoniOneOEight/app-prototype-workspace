@@ -1,0 +1,10 @@
+id: shared.multi-seller-cart
+kind: pattern
+slots:
+- group_by_seller
+- seller_subtotals
+- split_delivery
+metadata:
+  maturity: seed
+  source_reference: b2b+b2c prototype
+  client_agnostic: true

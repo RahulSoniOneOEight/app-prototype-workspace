@@ -1,0 +1,37 @@
+id: technology-modern-digital-indigo
+name: Digital Indigo
+parent_preset: technology-modern
+option: B
+source_colors:
+- '#F4EEFF'
+- '#DCD6F7'
+- '#A6B1E1'
+- '#424874'
+metadata:
+  warmth: cool
+  saturation: medium
+  contrast: medium
+best_for:
+- AI
+- SaaS
+- collaboration
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#424874'
+  brand_secondary: '#A6B1E1'
+  background: '#F4EEFF'
+  surface: '#FFFFFF'
+  surface_alt: '#DCD6F7'
+  text_primary: '#424874'
+  text_secondary: '#A6B1E1'
+  border: '#DCD6F7'
+  accent: '#A6B1E1'
+  cta: '#424874'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

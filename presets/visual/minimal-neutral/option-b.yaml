@@ -1,0 +1,37 @@
+id: minimal-neutral-warm-minimal
+name: Warm Minimal
+parent_preset: minimal-neutral
+option: B
+source_colors:
+- '#F8F5F1'
+- '#EAE0D5'
+- '#C6AC8F'
+- '#22333B'
+metadata:
+  warmth: warm
+  saturation: low
+  contrast: medium
+best_for:
+- consulting
+- services
+- premium B2B
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#22333B'
+  brand_secondary: '#C6AC8F'
+  background: '#F8F5F1'
+  surface: '#FFFFFF'
+  surface_alt: '#EAE0D5'
+  text_primary: '#22333B'
+  text_secondary: '#C6AC8F'
+  border: '#EAE0D5'
+  accent: '#C6AC8F'
+  cta: '#22333B'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

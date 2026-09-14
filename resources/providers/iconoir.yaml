@@ -1,0 +1,6 @@
+id: iconoir
+type: icon_provider
+supports: [navigation, actions, category_icons]
+license: MIT
+rules: [use_consistent_stroke_family]
+metadata: {maturity: approved-source-definition}

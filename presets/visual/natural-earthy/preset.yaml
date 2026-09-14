@@ -1,0 +1,15 @@
+id: natural-earthy
+kind: visual_preset
+name: Natural Earthy
+description: Natural Earthy visual direction family.
+options:
+- natural-earthy-terracotta-earth
+- natural-earthy-organic-sage
+- natural-earthy-forest-clay
+three_option_semantics:
+  A: safest / broadly applicable
+  B: differentiated / contemporary
+  C: stronger / exploratory
+metadata:
+  maturity: seed
+  client_agnostic: true

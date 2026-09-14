@@ -1,0 +1,27 @@
+id: preset.industry.b2b-industrial-construction
+kind: industry
+name: B2B Industrial & Construction
+industry_characteristics:
+- known_item_search
+- bulk_quantity
+- uom
+- rfq
+- credit
+- boq
+recommended:
+  patterns:
+  - b2b.trade_home
+  - b2b.bulk_product
+  - b2b.rfq
+  - b2b.quote_comparison
+  - b2b.credit
+  experience_patterns:
+  - trade-first
+  - rfq-first
+  - reorder-first
+resource_guidance:
+  imagery: fit_to_industry_and_client_brand
+  icons: semantic_and_consistent
+metadata:
+  maturity: seed
+  client_agnostic: true

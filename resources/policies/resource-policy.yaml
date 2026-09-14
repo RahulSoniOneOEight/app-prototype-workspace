@@ -1,0 +1,6 @@
+rules:
+- prefer_client_owned_assets_for_brand_and_product_truth
+- search_approved_registry_before_external_sources
+- record_provenance_for_external_assets
+- never_store_secrets
+- review_license_before_production

@@ -1,0 +1,15 @@
+id: warm-commerce
+kind: visual_preset
+name: Warm Commerce
+description: Warm Commerce visual direction family.
+options:
+- warm-commerce-amber-retail
+- warm-commerce-coral-commerce
+- warm-commerce-cocoa-market
+three_option_semantics:
+  A: safest / broadly applicable
+  B: differentiated / contemporary
+  C: stronger / exploratory
+metadata:
+  maturity: seed
+  client_agnostic: true

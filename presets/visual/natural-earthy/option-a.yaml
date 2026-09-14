@@ -1,0 +1,38 @@
+id: natural-earthy-terracotta-earth
+name: Terracotta Earth
+parent_preset: natural-earthy
+option: A
+source_colors:
+- '#FAEDCD'
+- '#D4A373'
+- '#A98467'
+- '#6C584C'
+metadata:
+  warmth: warm
+  saturation: medium
+  contrast: medium
+best_for:
+- home
+- food
+- craft
+- sustainable retail
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#6C584C'
+  brand_secondary: '#A98467'
+  background: '#FAEDCD'
+  surface: '#FFFFFF'
+  surface_alt: '#D4A373'
+  text_primary: '#6C584C'
+  text_secondary: '#A98467'
+  border: '#D4A373'
+  accent: '#A98467'
+  cta: '#6C584C'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

@@ -1,0 +1,15 @@
+id: search-first
+kind: experience_pattern
+objective:
+- known_item_buying
+- large_catalogue
+primary_entry_points:
+- search
+recommended_patterns:
+- shared.search
+- shared.marketplace-pdp
+de_emphasize:
+- heavy_editorial_chrome
+metadata:
+  maturity: seed
+  client_agnostic: true

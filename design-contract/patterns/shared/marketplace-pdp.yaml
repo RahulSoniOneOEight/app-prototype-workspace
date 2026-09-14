@@ -1,0 +1,11 @@
+id: shared.marketplace-pdp
+kind: pattern
+slots:
+- product_identity
+- seller_offers
+- delivery_visibility
+- trust_signals
+metadata:
+  maturity: seed
+  source_reference: b2b+b2c prototype
+  client_agnostic: true

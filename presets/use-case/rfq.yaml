@@ -1,0 +1,14 @@
+id: preset.use_case.rfq
+kind: use_case
+recommended:
+  patterns:
+  - b2b.rfq
+  - b2b.quote_comparison
+  journeys:
+  - b2b.rfq_to_quotes
+  - b2b.quote_to_order
+  experience_patterns:
+  - rfq-first
+metadata:
+  maturity: seed
+  client_agnostic: true

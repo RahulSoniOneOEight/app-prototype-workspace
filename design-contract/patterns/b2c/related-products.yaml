@@ -1,10 +1,10 @@
-id: b2c.related_products
-business_models: [b2c, marketplace]
-industries: [general]
-use_cases: [cross_sell, upsell, complementary_products]
-best_for: [pdp, cart, post_add_to_cart]
-avoid_for: [no_recommendation_signal]
-required_components: [commerce.product_card]
-optional_components: [commerce.promo_tile]
-responsive: {mobile: horizontal_rail, tablet: grid_or_rail, desktop: grid_or_rail}
-supported_slots: [complementary, similar, frequently_bought, recently_viewed]
+id: b2c.related-products
+kind: pattern
+slots:
+- complementary
+- recently_viewed
+- deals
+metadata:
+  maturity: seed
+  source_reference: b2b+b2c prototype
+  client_agnostic: true

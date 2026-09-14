@@ -1,0 +1,15 @@
+id: soft-contemporary
+kind: visual_preset
+name: Soft Contemporary
+description: Soft Contemporary visual direction family.
+options:
+- soft-contemporary-soft-blue
+- soft-contemporary-blush-modern
+- soft-contemporary-lavender-slate
+three_option_semantics:
+  A: safest / broadly applicable
+  B: differentiated / contemporary
+  C: stronger / exploratory
+metadata:
+  maturity: seed
+  client_agnostic: true

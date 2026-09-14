@@ -1,0 +1,13 @@
+id: preset.use_case.subscription
+kind: use_case
+recommended:
+  patterns:
+  - shared.plan_comparison
+  - shared.subscription_status
+  journeys:
+  - subscription.plan_to_checkout
+  experience_patterns:
+  - guided-selling
+metadata:
+  maturity: seed
+  client_agnostic: true

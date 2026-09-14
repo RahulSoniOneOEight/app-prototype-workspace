@@ -1,0 +1,11 @@
+id: example-lifestyle-seed
+type: image
+status: reference-only
+source:
+  provider: pexels
+  asset_id: null
+  author: null
+  source_url: null
+query: modern premium interior
+approved_for: [prototype_when_exact_asset_is_selected]
+provenance_status: incomplete-until-asset-selected

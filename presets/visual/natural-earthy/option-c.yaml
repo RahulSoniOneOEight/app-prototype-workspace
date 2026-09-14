@@ -1,0 +1,37 @@
+id: natural-earthy-forest-clay
+name: Forest Clay
+parent_preset: natural-earthy
+option: C
+source_colors:
+- '#F4EAD5'
+- '#D5B4B4'
+- '#867070'
+- '#395144'
+metadata:
+  warmth: warm
+  saturation: low
+  contrast: medium
+best_for:
+- interiors
+- artisan brands
+- hospitality
+source_ref:
+  provider: Color Hunt / Figma reference curation
+  exact_palette_url: null
+semantic_tokens:
+  brand_primary: '#395144'
+  brand_secondary: '#867070'
+  background: '#F4EAD5'
+  surface: '#FFFFFF'
+  surface_alt: '#D5B4B4'
+  text_primary: '#395144'
+  text_secondary: '#867070'
+  border: '#D5B4B4'
+  accent: '#867070'
+  cta: '#395144'
+  cta_text: '#FFFFFF'
+  success: '#2E7D32'
+  warning: '#B26A00'
+  error: '#B3261E'
+accessibility_status: validate-before-production
+curation_notes: Seed mapping; semantic roles must be contrast-validated before production.

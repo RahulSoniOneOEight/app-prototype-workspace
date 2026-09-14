@@ -1,0 +1,20 @@
+id: verified-badge
+kind: component
+purpose:
+- communicate_verified_status
+- increase_trust
+required_fields:
+- label
+optional_fields:
+- icon
+- tooltip
+variants:
+- default
+- compact
+platforms:
+- mobile
+- web
+metadata:
+  maturity: seed
+  source_reference: b2b+b2c prototype
+  client_agnostic: true

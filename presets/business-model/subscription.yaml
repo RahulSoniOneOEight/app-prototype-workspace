@@ -1,12 +1,16 @@
 id: preset.business.subscription
 kind: business_model
 recommended:
-  themes: [theme.base]
-  patterns: [shared.home, shared.pdp, shared.account, shared.orders]
-  journeys: [core.browse_to_product, core.cart_to_checkout, core.order_tracking]
-  component_variants: {commerce.product_card: standard, commerce.price_display: standard}
-optional:
-  capabilities: [frequency_selection, pause_resume, skip_next, subscription_management]
-  patterns: [shared.checkout]
-avoid:
-  patterns: [b2b.quote_comparison]
+  priorities:
+    plan_clarity: high
+    renewal_visibility: high
+    account_control: high
+  patterns:
+  - shared.plan_comparison
+  - shared.subscription_status
+  journeys:
+  - subscription.plan_to_checkout
+  - subscription.manage_subscription
+metadata:
+  maturity: seed
+  client_agnostic: true

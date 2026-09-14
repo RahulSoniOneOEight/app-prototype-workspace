@@ -1,0 +1,15 @@
+id: expressive
+kind: visual_preset
+name: Expressive
+description: Expressive visual direction family.
+options:
+- expressive-purple-pop
+- expressive-coral-electric
+- expressive-magenta-contrast
+three_option_semantics:
+  A: safest / broadly applicable
+  B: differentiated / contemporary
+  C: stronger / exploratory
+metadata:
+  maturity: seed
+  client_agnostic: true
